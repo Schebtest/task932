@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+}
+
+section {
+	padding: 1% 0;
+}
+
+div.wrapper {
+	padding: 1% 0;
+}
+
+div.content {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1%;
+	overflow: hidden;
+}
+
+/*настройка шапки сайта*/
+
+header .wrapper {
+	background-color: #f7e8e3;
+}
+
+header .content {
+	display: flex; /*гибкий контейнер*/
+	align-items: center; /*выравнивание по центру*/
+	justify-content: space-between; /*распределние элементов по горизонтали*/
+	padding: 0;
+}
+
+.content .logo img {
+	height: 75px;
+}
+
+.content nav {
+	font-size: 16pt;
+}
+.content nav a {
+	text-decoration: none;
+}
+.content nav a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*Оформление блока Баннер*/
+
+section.banner {
+	min-height: 80vh;
+	background-image: url("../media/image/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+section.banner div.wrapper {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	min-height: 90vh;
+	margin-left: 2%;
+}
+
+section.banner div.wrapper h1 {
+	font-size: 8em;
+	font-weight: bold;
+}
+
+/*Настройки блока Алгоритм*/
+
+.alg {
+	background-color: #04323a;
+}
+
+h1 {
+	font-size: 32pt;
+}
+
+/*Шаги без анимации*/
+
+section.alg div.steps {
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+section.alg div.step {
+	font-size: 16pt;
+	background-color: #d1dcde;
+	width: 15%;
+	padding: 10px 20px;
+}
+
+/*Настройка блока О компании*/
+
+div.comment {
+	width: 33%;
+	float: left;
+	padding: 2%;
+}
+
+div.comment img.comment_foto {
+	width: 60%;
+	margin: 0 auto;
+}
+
+div.comment div.comment_text {
+	padding: 2%;
+}
+
+/*Настройка блока Поиск*/
+
+select,
+input,
+button {
+	width: 100%;
+	min-height: 50px;
+	margin-top: 1%;
+	padding: 1%;
+	font-size: 16pt;
+}
+
+/*Настройка блока Акции*/
+
+section.promos {
+	background-color: #d1dcde;
+}
+section.promos .content {
+	display: flex;
+	flex-wrap: wrap;
+}
+div.promo {
+	width: 31%;
+	margin: 1%;
+	padding: 2%;
+}
+
+div.promo img {
+	width: 100%;
+	margin: 0 auto;
+}
+div.promo div.promo_text {
+	padding: 2%;
+}
+
+.promo button {
+	background-color: #04323a;
+}
+/*Настройка блока Подписка*/
+section.sub {
+	background-color: #04323a;
+}
+
+/*Настройка блока Подвал*/
+
+footer {
+	background-color: #f7e8e3;
+}
+footer h2 {
+	font-size: 32pt;
+}
+footer nav {
+	padding-top: 20px;
+}

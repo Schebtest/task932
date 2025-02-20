@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-shadow</title>
+    <style>
+        section {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: bolder;
+            margin-bottom: 5%;
+        }
+
+        .standart {
+            text-shadow: 2px 5px 3px blue;
+        }
+
+        .alt {
+            text-shadow: blue 2px 5px 3px;
+        }
+
+        .blur {
+            text-shadow: rgb(191, 21, 18) 0 0 30px;
+        }
+
+        .no-blur {
+            text-shadow: rgb(103, 9, 125) 5px 10px;
+        }
+
+        .no-color {
+            text-shadow: 15px 15px;
+        }
+
+        .double {
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        }
+
+        /* создайте свой стиль и сместите тень вверх или налево или все вместе */
+        /* экспериментируйте с несколькими тенями */
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+        <h1>Варианты тени для текста</h1>
+        <h2 class="standart">4 значения: смещение по сторонам, смещение верх-низ, размытие, цвет.</h2>
+        <h2 class="alt">А еще цвет можно указывать первым и ничего не поменяется.</h2>
+        <h2 class="blur">Добавим размытия, но уменьшим смещение. Тоже неплохо.</h2>
+        <h2 class="no-blur">Уберем размытие вообще. Вот так вот.</h2>
+        <h2 class="no-color">И цвет тоже уберем. Как вам такое?</h2>
+        <h2 class="double">А теперь добавим даже две... нет даже три тени.</h2>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        section {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        h1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        div {
+            margin: 4%;
+            margin-bottom: 10%;
+            width: 200px;
+            height: 200px;
+            background-color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            color: #fff;
+        }
+
+        .black {
+            box-shadow: 20px 40px 10px black;
+        }
+
+        .black_4param {
+            box-shadow: 20px 40px 10px 15px black;
+        }
+
+        .black_inset {
+            box-shadow: 20px 40px 10px black inset;
+        }
+
+        /* Измените радиус скругления границы на более сложный, оцените как изменится тень */
+        .red_border {
+            box-shadow: 20px 40px 10px red;
+            border-radius: 20%;
+        }
+
+        /* поэкспериментируйте с настройками, двигайте тень в разные стороны */
+        .red_border_negative {
+            box-shadow: -20px -40px 10px red;
+            border-radius: 20%;
+        }
+
+        /* добавьте еще несколько теней с разным расположением и параметрами, оцените их наложение друг на друга */
+        .double {
+            box-shadow: 10px 10px red, 20px 20px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Варианты тени для блока</h1>
+        <div class="black">black</div>
+        <div class="black_4param">black_4param</div>
+        <div class="black_inset">black_inset</div>
+        <div class="red_border">red_border</div>
+        <div class="red_border_negative">red_border_negative</div>
+        <div class="double">double</div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+        section {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        h1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        div {
+            margin: 2%;
+            width: 200px;
+            height: 200px;
+            background-color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            color: #fff;
+        }
+
+        .solid {
+            outline: 10px red;
+            outline-style: solid;
+        }
+
+        .dashed {
+            outline: 5px rgb(58, 17, 131);
+            outline-style: dashed;
+        }
+
+        .dotted {
+            outline: 10px rgb(8, 131, 180);
+            outline-style: dotted;
+        }
+
+        .double {
+            outline: 25px green;
+            outline-style: double;
+        }
+
+        .groove {
+            outline: 15px hsl(348, 88%, 29%);
+            outline-style: groove;
+        }
+
+        .ridge {
+            outline: 15px hsl(348, 88%, 29%);
+            outline-style: ridge;
+        }
+
+        .inset {
+            outline: 10px #f9f225;
+            outline-style: inset;
+        }
+
+        .outset {
+            outline: 10px #f9f225;
+            outline-style: outset;
+        }
+
+        /* Сравните внешний вид контуров и границ из предыдущего файла.
+        Совместите эти два документа в один так, чтобы у соседних блоков были одинаковые настройки типа границы/контура цвета и толщины.*/
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <h1>Варианты оформления контура</h1>
+        <div class="solid">solid</div>
+        <div class="dashed">dashed</div>
+        <div class="dotted">dotted</div>
+        <div class="double">double</div>
+        <div class="groove">groove</div>
+        <div class="ridge">ridge</div>
+        <div class="inset">inset</div>
+        <div class="outset">outset</div>
+    </section>
+
+</body>
+
+</html>

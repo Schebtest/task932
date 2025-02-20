@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius</title>
+    <style>
+        section {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        h1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        div {
+
+            border: 7px solid red;
+
+            margin: 2%;
+            width: 300px;
+            height: 300px;
+            background-color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            color: #fff;
+        }
+
+        /* границы одинаково скругляются по всем 4 углам */
+        .four-corner {
+            border-radius: 30px;
+        }
+
+        /* такой лафхак позволяет сделать блок (или изображение) круглым, важно, чтобы исходный блок (изображение) был квадратным */
+        .round {
+            border-radius: 50%;
+        }
+
+        /* первое значение применяется к углам: сверху-слева и снизу-справа */
+        /* второе значение применяется к углам: сверху-справа и снизу-слева */
+        .top-left-bottom-right {
+            border-radius: 30% 10%;
+        }
+
+        /* задаем скругление по часовой стрелке, начиная с левого верхнего угла */
+        .clockwise {
+            border-radius: 20% 35% 55% 80%;
+        }
+
+        /* задаем разные значения сторонам угла */
+        /* слева от слэш задает радиус по горизонтали, а справа по вертикали */
+        .two-side {
+            border-radius: 25% / 10%;
+        }
+
+        /* 10px - горизонтальное скругление верхнего левого и нижнего правого углов
+             100px - горизонтальное скругление для верхнего правого и нижнего левого углов
+             120px - вертикальное скругление для всех углов */
+        .groove {
+            border-radius: 10px 100px / 120px;
+        }
+
+        /*    50% верхний левый и нижний правый по горизонтали 20% верхний правый и нижний левый  / 
+                10% верхний левый и нижний правый по вертикали 40% верхний правый и нижний левый по вертикали
+        */
+        .ridge {
+            border-radius: 50% 20% / 10% 40%;
+        }
+
+        /* Поэкспериментируйте с настройками скругления границ, чтобы лучше разобраться как они работают. Попробуйте создать свою собственную необычную границу блоку. */
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Варианты закругления границы</h1>
+        <div class="four-corner">30px</div>
+        <div class="round">50%</div>
+        <div class="top-left-bottom-right">30% 10%</div>
+        <div class="clockwise">20% 35% 55% 80%</div>
+        <div class="two-side">25% / 10%</div>
+        <div class="groove">10px 100px / 120px</div>
+        <div class="ridge">50% 20% / 10% 40%</div>
+
+
+    </section>
+
+
+</body>
+
+</html>
