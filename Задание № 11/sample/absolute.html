@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Position:absolute</title>
+    <style>
+        /* можете скрыть это свойство position: static; и ничего на странице не изменится, потому что это значение по умолчанию */
+        div.one,
+        div.two,
+        div.four {
+            position: static;
+        }
+
+        /*  измените поведение блока с относительного позиционирования на абсолютное, оцените как переместился блок, при том что значения смещения остались прежними*/
+        div.three {
+            /* position: relative; */
+            position: absolute;
+        }
+
+        /* можете изменить значения отступов на нулевые и оцените как переместился блок, как видите при смещении учитываются отступы и поля блоков */
+        div.three {
+            top: 300px;
+            left: 150px;
+        }
+
+        /* установите родительскому контейнеру тип позиционирования отличный от static, чтобы вложенный блок позиционировался относительно него */
+        .container {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position absolute</h1>
+    <div class="container">
+        <div class="one">
+            <h1>1</h1>
+        </div>
+        <div class="two">
+            <h1>2</h1>
+        </div>
+        <div class="three">
+            <h1>3</h1>
+        </div>
+        <div class="four">
+            <h1>4</h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.container {
+	margin: 0 auto;
+	background-color: #bbbbbb;
+	width: 90%;
+	height: 300px;
+	color: white;
+	text-align: center;
+	display: flex;
+}
+
+
+
+.one, .two, .three, .four{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	margin: 25px;
+}
+
+
+.one {
+	background-color: green;
+	width: 100px;
+	height: 150px;
+}
+
+.two {
+	background-color: gold;
+	width: 150px;
+	height: 100px;
+}
+
+.three {
+	background-color: red;
+	width: 150px;
+	height: 150px;
+}
+
+.four {
+	background-color: blue;
+	width: 100px;
+	height: 200px;
+
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Position:stiky</title>
+    <style>
+        .container {
+            position: relative;
+            height: 1400px;
+        }
+
+        div.one,
+        div.two,
+        div.four {
+            position: static;
+        }
+
+        /* Прокрутите страницу  и оцените поведение блока*/
+        div.three {
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position stiky</h1>
+    <div class="container">
+        <div class="one">
+            <h1>1</h1>
+        </div>
+        <div class="two">
+            <h1>2</h1>
+        </div>
+        <div class="three">
+            <h1>3</h1>
+        </div>
+        <div class="four">
+            <h1>4</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
