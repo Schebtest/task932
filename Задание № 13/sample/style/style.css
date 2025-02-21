@@ -1,0 +1,455 @@
+/* Подключаем три версии шрифта Golos, разной толщины */
+@font-face {
+	font-family: Golos;
+	src: url("../fonts/Golos-Text_Regular.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Golos;
+	src: url("../fonts/Golos-Text_DemiBold.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Golos;
+	src: url("../fonts/Golos-Text_Bold.ttf");
+	font-weight: 700;
+}
+
+* {
+	font-family: Golos;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.bold {
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+
+.text-title {
+	font-size: 48px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.text-title-sm {
+	font-size: 32px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+/* /// Панель навигации /// */
+.navigation a {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.navigation {
+	display: flex;
+}
+
+.navigation nav {
+	width: 50%;
+}
+
+.menu {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+}
+
+.menu li {
+	display: flex;
+	align-items: center;
+}
+
+.left-menu li {
+	padding-left: 2%;
+}
+
+.right-menu li {
+	padding-right: 4%;
+	white-space: nowrap;
+}
+.right-menu a {
+	padding-left: 6%;
+}
+
+.right-menu .menu {
+	justify-content: end;
+}
+
+/* /// Стили блока Баннер фильма /// */
+
+.age-restriction {
+	padding: 4px;
+}
+
+.btn-stylized {
+	padding: 15px;
+	border: none;
+	margin-right: 0.5%;
+	border-radius: 10px;
+}
+
+.banner-button .btn-stylized {
+	margin-top: 4%;
+}
+
+.banner-button .btn-stylized span {
+	margin-left: 10px;
+}
+
+.banner-button .btn-stylized:nth-child(1) {
+	width: 240px;
+}
+.banner-button .btn-stylized:nth-child(2) {
+	width: 130px;
+}
+.banner-button .btn-stylized:nth-child(3) {
+	width: 65px;
+}
+
+.banner {
+	display: flex;
+	justify-content: start;
+	align-items: end;
+}
+
+.banner-img {
+	position: relative;
+}
+
+.banner-text {
+	position: absolute;
+	padding: 5% 3%;
+}
+
+.banner-description {
+	width: 35%;
+	justify-content: space-between;
+}
+
+.banner-genres {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 0;
+}
+
+/* /// Рекомендации /// */
+.recomendation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.recomendation div {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
+}
+
+.rounded {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.recomendation .bold {
+	margin-top: 3%;
+}
+
+/* /// Космическая подборка /// */
+.compilation {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 5% 0;
+}
+
+.compilation .compilation-img {
+	position: relative;
+	width: 100%;
+}
+
+.compilation .compilation-text {
+	position: absolute;
+	width: 25%;
+	margin-left: 5%;
+}
+
+.compilation-text .btn-stylized {
+	width: 75%;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+
+/* /// Открытие недели /// */
+.opening {
+	display: flex;
+}
+
+.opening-padding {
+	padding-bottom: 7%;
+}
+
+.opening-description {
+	width: 42%;
+	margin-right: 20px;
+}
+
+.opening-img {
+	width: 58%;
+}
+
+.action {
+	width: 50%;
+	text-align: center;
+	padding: 7px;
+	border-radius: 20px;
+	margin: 15px 0;
+}
+
+.opening-genres {
+	display: flex;
+	width: 75%;
+	justify-content: space-between;
+}
+
+.text-opening {
+	margin: 10px 0;
+}
+
+.opening .banner-button .btn-stylized {
+	margin-top: 10px;
+}
+
+.opening-img-row {
+	display: flex;
+	margin-top: 24px;
+}
+
+.opening-img-col {
+	width: 50%;
+	margin-right: 20px;
+}
+
+.opening-button {
+	margin: 24px 0 15px 0;
+}
+
+.opening-button button {
+	padding: 10px;
+	border: none;
+}
+
+.nav-link {
+	font-weight: 700;
+}
+
+/* /// Преимущества LiveTV /// */
+.advantages {
+	padding: 7% 0;
+	display: flex;
+}
+
+.advantages-img {
+	width: 50%;
+}
+.advantages-text {
+	width: 50%;
+}
+
+.advantages-statistics {
+	display: flex;
+}
+
+.advantages-statistics-col {
+	width: 50%;
+}
+
+.text-gradient {
+	font-weight: 700;
+	font-size: 40px;
+	color: transparent;
+}
+
+/* /// Оформление подписки /// */
+.tariff-form-item {
+	padding-top: 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	margin-bottom: 8px;
+}
+
+.form-input {
+	padding: 16px;
+}
+
+.subscription {
+	display: flex;
+	align-items: center;
+	padding: 7% 0;
+}
+
+.subscription-form {
+	width: 50%;
+}
+
+.subscription-time {
+	width: 50%;
+}
+
+.subscription-time-margin {
+	margin-top: 24px;
+}
+
+.subscription-time-row {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.subscription-time-col {
+	width: 42%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px;
+}
+
+.form-radio {
+	display: flex;
+}
+
+.form-radio-title {
+	margin: 16px 0;
+}
+
+.form-radio-col {
+	width: 25%;
+}
+
+.subscription-button {
+	width: 40%;
+	font-weight: 700;
+}
+
+.text-blue {
+	font-size: 40px;
+	margin: 24px 0;
+}
+
+/* Кастомная стилизация радиокнопок */
+.tariff-form .form-radio input[type="radio"] {
+	display: none;
+} /* Скрываем стандартную радиокнопку */
+
+.tariff-form .form-radio label {
+	cursor: pointer;
+	position: relative;
+	padding-left: 25%;
+}
+
+/* Добавляем кастомную неактивную радиокнопку */
+.tariff-form .form-radio label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+}
+
+/* Вид активной радиокнопки */
+.tariff-form .form-radio input[type="radio"]:checked + label::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	left: 6px;
+	top: 6.5px;
+}
+
+/* Кастомная стилизация чекбоксов */
+.tariff-form .form-checkbox {
+	margin: 48px 0;
+}
+
+.tariff-form .form-checkbox input[type="checkbox"] {
+	display: none;
+} /* Скрываем стандартный чекбокс */
+
+.tariff-form .form-checkbox label {
+	cursor: pointer;
+	position: relative;
+	padding-left: 5.5%;
+}
+
+/* Добавляем кастомный неактивный чекбокс */
+.tariff-form .form-checkbox label::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+}
+
+/* Вид активного чекбокса */
+.tariff-form .form-checkbox input:checked + label::after {
+	content: "\2713";
+	font-weight: 700;
+	font-size: 18px;
+	position: absolute;
+	display: inline-block;
+	left: 6px;
+	top: 0px;
+}
+
+/* /// Подвал /// */
+.footer-flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px;
+}
+
+.footer-privacy {
+	border-bottom: 1px solid #4f575c;
+	margin-left: 16px;
+}
+
+footer .icon {
+	margin: 0 8px;
+}
+
+.link-icon object {
+	pointer-events: none;
+}
+.link-icon a {
+	display: inline-block;
+}

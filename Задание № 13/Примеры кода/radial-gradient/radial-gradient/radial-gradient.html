@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial-gradient</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* добавьте к устанвкам градиента указатель формы - circle */
+        /* background: radial-gradient(circle, #011923, #0c8bd0); */
+        div.block#first {
+            background: radial-gradient(circle, #011923, #0c8bd0);
+        }
+
+        div.block#second {
+            width: 60%;
+            background: radial-gradient(circle, #390655, #dd59ad, #f0f2d4);
+        }
+
+        div.block#third {
+            height: 500px;
+            background: radial-gradient(circle, #11f039, #0d621d, #ffd900, #e6d4bd);
+        }
+
+        div.block#fourth {
+            height: 500px;
+            width: 60%;
+            background: radial-gradient(circle, #4d06a4, transparent, #ff0000, #2b0d57);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Радиальный градиент</h1>
+
+    <div class="container">
+
+        <div class="block" id="first">
+            <span>#011923 <br> #0c8bd0</span>
+        </div>
+
+        <div class="block" id="second">
+            <span>#390655 <br> #dd59ad <br> #f0f2d4</span>
+        </div>
+
+        <div class="block" id="third">
+            <span>#11f039 <br> #0d621d <br> #ffd900 <br> #e6d4bd</span>
+        </div>
+
+        <div class="block" id="fourth">
+            <span>#4d06a4 <br> transparent <br> #ff0000 <br> #2b0d57</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

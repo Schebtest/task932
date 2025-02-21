@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>background-repeat</title>
+    <style>
+        div.block {
+            width: 45%;
+            height: 400px;
+            background: dodgerblue url(images/duck-big.png);
+        }
+
+        #first {
+            background-repeat: repeat;
+        }
+
+        #second {
+            background-repeat: no-repeat;
+        }
+
+        #third {
+            width: 80%;
+            background-repeat: space;
+        }
+
+        #fourth {
+            width: 15%;
+            background-repeat: round;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Настройка повторения</h1>
+    <div class="container">
+        <div class="block" id="first"></div>
+        <div class="block" id="second"></div>
+        <div class="block" id="third"></div>
+        <div class="block" id="fourth"></div>
+    </div>
+</body>
+
+</html>

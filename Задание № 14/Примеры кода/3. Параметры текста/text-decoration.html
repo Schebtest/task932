@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        /* -------расположение линии-------- */
+        .underline {
+            text-decoration-line: underline;
+        }
+
+        .overline {
+            text-decoration-line: overline;
+        }
+
+        .line-throught {
+            text-decoration-line: line-through;
+        }
+
+        /* -------стиль линии-------- */
+        .solid {
+            text-decoration-style: solid;
+        }
+
+        .double {
+            text-decoration-style: double;
+        }
+
+        .dotted {
+            text-decoration-style: dotted;
+        }
+
+        .dashed {
+            text-decoration-style: dashed;
+        }
+
+        .wavy {
+            text-decoration-style: wavy;
+        }
+
+        /* -------толщина линии-------- */
+        .thin {
+            text-decoration-thickness: 1px;
+        }
+
+        .normal {
+            text-decoration-thickness: auto;
+        }
+
+        .thick {
+            text-decoration-thickness: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>В стилях документа созданы классы с разными настройками. Добавляйте/удаляйте классы, чтобы изменить внешний
+            вид документа.</h1>
+
+        <p class="underline double thick">Много текста в примерах писать не будем.</p>
+        <p class="line-throught solid thin">Нескольких слов вполне достаточно.</p>
+        <p class="overline double normal">Попробуйте заменить настройки, заданные несколькими свойствами одним.</p>
+        <p class="wavy line-throught"> Напомним, что сделать это можно с помощью свойства text-decoration.</p>
+
+        <h1>Установите классы, так чтобы вид текста соответствовал его содержанию. Если каких-то стилей или элементов с
+            классами не хватает, допишите их.</h1>
+        <p>Синий текст, зачеркнутый белой волнистой линией толщиной 5px.</p>
+        <p>Текст, надчеркнутый пунктирной линией любого цвета.</p>
+        <p>Подчеркнутый любым типом линии текст, при этом линия смещена на 8px.</p>
+        <p>Расставьте классы в этом абзаце так, чтобы у этого текста подчеркивание размещалось поверх глифов, а у этого
+            текста добавлялись разрывы в подчеркивании.</p>
+    </div>
+</body>
+
+</html>

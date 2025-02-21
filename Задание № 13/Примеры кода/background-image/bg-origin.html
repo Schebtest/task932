@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>background-origin</title>
+    <style>
+        .block {
+            background-image: url(images/html.jpg);
+            background-repeat: no-repeat;
+            border: 30px dashed #ff0000;
+            padding: 30px;
+        }
+
+        #first {
+            background-origin: border-box;
+        }
+
+        #second {
+            background-origin: padding-box;
+        }
+
+        #third {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Настройка расположения</h1>
+    <div class="container">
+        <div class="block" id="first"></div>
+        <div class="block" id="second"></div>
+        <div class="block" id="third"></div>
+    </div>
+</body>
+
+</html>

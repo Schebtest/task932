@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* ------Размеры в pt и px----- */
+        .block .text12pt {
+            font-size: 12pt;
+        }
+
+        .block .text14pt {
+            font-size: 14pt;
+        }
+
+        .block .text6pt {
+            font-size: 6pt;
+        }
+
+        .block .text12px {
+            font-size: 12px;
+        }
+
+        .block .text14px {
+            font-size: 14px;
+        }
+
+        .block .text6px {
+            font-size: 6px;
+        }
+
+
+        /* ------Размеры в em------ */
+        h1.em {
+            font-size: 3em;
+        }
+
+        div.em {
+            font-size: 16px;
+        }
+
+        p.em1 {
+            font-size: 1em;
+        }
+
+        p.em05 {
+            font-size: 0.5em;
+        }
+
+        p.em2 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Не будем создавать много контейнеров, особенно для первых вариантов: pt, px, %</h1>
+        <div class="block">
+            <p>Размеры текста в пунктах привычны и знакомы нам из всевозможных редакторов.
+            <ul>
+                <li> <span class="text12pt">12pt - стандартный размер в реферате, </span>
+                </li>
+                <li><span class="text14pt">14pt - для заголовков, а </span>
+                </li>
+                <li><span class="text6pt"> 6pt - для текста внизу договора.</span></li>
+            </ul>
+            </p>
+            <p>Оставим те же значения, но заменим пункты на пиксели.
+            <ul>
+                <li> <span class="text12pt">был текст размером 12pt</span><span class="text12px">, а стал размером
+                        12px.</span>
+                </li>
+                <li><span class="text14pt">был 14pt - для заголовков</span><span class="text14px">, а стал размером
+                        14px.</span>
+                </li>
+                <li><span class="text6pt">самый маленький 6pt - для текста внизу договора</span><span class="text6px">,
+                        а теперь 6px... без комментариев...</span></li>
+            </ul>
+            </p>
+        </div>
+        <h1 class="em">Перепишем стандартный размер элемента h1 в 32px и зададим этому заголовку размер в em-ах,
+            например 3em. Кстати, попробуйте переписать его, например на... 48px</h1>
+        <!-- Ладно, и правда получилось крупновато... верните обратно, можете использовать и пиксели и em-ы и, если дружите с математикой пункты. -->
+        <div class="em">
+            <p class="em1">Устанавливаем тексту размер в em-ах</p>
+            <p class="em05">Меняем родительский размер</p>
+            <p class="em2">Отслеживаем изменения</p>
+        </div>
+        <!-- Создайте аналогичный блок с настройками размера в rem -->
+        <!-- числовые значения оставьте прежними -->
+        <!-- попробуйте поменять размер шрифта для элемента html -->
+    </div>
+</body>
+
+</html>

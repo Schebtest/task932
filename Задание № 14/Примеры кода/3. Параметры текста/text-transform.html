@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-transform</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .full-width {
+            text-transform: full-width;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Будьте осторожнее в изменении текста. Много "КАПСА" не очень читаемо, "ВеРблЮжЬя" нотация тоже не всегда
+            уместна.</h1>
+        <h2>UPPERCASE</h2>
+        <div class="uppercase">
+            <p>Весь текст, вне зависимости от исходного вида будет отображаться заглавными буквами. </p>
+            <p>даже если он весь написан прописными буквами... </p>
+        </div>
+        <h2>lowercase</h2>
+        <div class="lowercase">
+            <p>ЗДЕСЬ НАОБОРОТ... ЭТОТ ТЕКСТ В КОДЕ НАПИСАН ЗАГЛАВНЫМИ БУКВАМИ...</p>
+        </div>
+        <h2>Capitalize</h2>
+        <div class="capitalize">
+            <p>и снова НЕ ОБРАЩАЕМ ВНИМАНИЯ на текст в коде. Точнее на первые символы в каждом слове. КАЖДОЕ СЛОво
+                пишется с большой буквы. ЧТО ИНТЕРЕСНО заглавные буквы в тексте остаются таковыми.</p>
+        </div>
+        <h2>Full-width</h2>
+        <div>
+            <p class="full-width">Иероглифы конечно добавлять мы не будем, но сравним написание текста с обычным
+                вариантом.</p>
+            <p>Иероглифы конечно добавлять мы не будем, но сравним написание текста с обычным вариантом.</p>
+        </div>
+    </div>
+</body>
+
+</html>

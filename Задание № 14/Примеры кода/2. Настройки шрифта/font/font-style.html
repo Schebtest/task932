@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-style</title>
+    <style>
+        @font-face {
+            font-family: "Lora";
+            src: url("Lora/Lora-Regular.ttf") format("truetype");
+            font-style: normal;
+        }
+
+        /* @font-face {
+            font-family: "Lora";
+            src: url("Lora/Lora-Italic.ttf") format("truetype");
+            font-style: italic;
+        } */
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-family: "Lora";
+        }
+
+        .normal {
+            font-style: normal;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .oblique {
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Стиль шрифта</h1>
+        <p class="normal">Будем рассматривать разные типы стилей текста. На самом деле их не много. Стандартное
+            начертание, как в текущем абзаце. Используется по умолчанию.</p>
+        <p class="italic">italic - курсивное начертание</p>
+        <p class="oblique">oblique - псевдо-курсив, формируется наклоном на определенный градус обычного шрифта
+            (загрузка дополнительного файла шрифта при этом не требуется).</p>
+        <p>Сейчас последние два абзаца выглядят одинаково, потому что умный браузер, обнаружив стили Italic, подключает
+            их взамен Oblique. Попробуйте отключить курсивный шрифт и оцените вид текста. </p>
+    </div>
+</body>
+
+</html>

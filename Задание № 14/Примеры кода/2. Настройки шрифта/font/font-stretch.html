@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-stretch</title>
+    <style>
+        @font-face {
+            font-family: RobotoFlex;
+            src: url("RobotoFlex.ttf");
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-family: 'RobotoFlex';
+            /* font-family: 'Rockwell'; */
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* font-family: 'Times New Roman', Times, serif; */
+        }
+
+        .normal {
+            font-stretch: normal;
+        }
+
+        .semi-condensed {
+            font-stretch: semi-condensed;
+        }
+
+        .condensed {
+            font-stretch: condensed;
+        }
+
+        .extra-condensed {
+            font-stretch: extra-condensed;
+        }
+
+        .ultra-condensed {
+            font-stretch: ultra-condensed;
+        }
+
+
+        .semi-expanded {
+            font-stretch: semi-expanded;
+        }
+
+        .expanded {
+            font-stretch: expanded;
+        }
+
+        .extra-expanded {
+            font-stretch: extra-expanded;
+        }
+
+        .ultra-expanded {
+            font-stretch: ultra-expanded;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Уплотненное начертание шрифта</h1>
+        <p class="normal">Пример текста, который находится в нормальном состоянии. Он не растянут и не сжат. Таким
+            бывает текст по умолчанию.</p>
+        <p>Важно, что не все шрифты поддерживают как сжатие, так и растяжение символов. Проверьте этот факт, изменив
+            настройки в стилях.</p>
+        <p>Подсказка: ищите вариативные шрифты.</p>
+
+        <h2>Теперь группа вариантов уплотнения символов:</h2>
+        <p class="normal">Обычное начертание | normal</p>
+        <p class="semi-condensed">Полусжатый | semi-condensed</p>
+        <p class="condensed">Сжатый | condensed</p>
+        <p class="extra-condensed">Экстра сжатый | extra-condensed</p>
+        <p class="ultra-condensed">Ультра сжатый | ultra-condensed</p>
+
+        <h2>Теперь группа вариантов разреженных:</h2>
+        <p class="normal">Обычное начертание | normal</p>
+        <p class="semi-expanded">Полуразреженный | semi-expanded</p>
+        <p class="expanded">Разреженный | expanded</p>
+        <p class="extra-expanded">Экстра разреженный | extra-expanded</p>
+        <p class="ultra-expanded">Ультра разреженный | ultra-expanded</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-emphasis</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 2em;
+        }
+
+        .first-fill {
+            text-emphasis: filled double-circle #ffb703;
+        }
+
+        .first-open {
+            text-emphasis: open double-circle #ffb703;
+        }
+
+        .second-fill {
+            text-emphasis: filled triangle rgba(129, 3, 255, 0.5);
+        }
+
+        .second-open {
+            text-emphasis: open triangle rgba(129, 3, 255, 0.5);
+        }
+
+        .third-under {
+            text-emphasis: sesame #ba4115;
+            text-emphasis-position: under;
+        }
+
+        .third-over {
+            text-emphasis: sesame #ba4115;
+            text-emphasis-position: over;
+        }
+
+        .fourth {
+            text-emphasis: '/U+02CA';
+        }
+
+        .fifth {
+            text-emphasis: 'XXX' #333333;
+        }
+
+        .sixth {
+            text-emphasis-style: '\2720';
+            text-emphasis-color: #0441dd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Одна строчка текста, а сколько стилей, кода и настроек...</h1>
+        <h2>Для каждого символа своя настройка.</h2>
+        <h3>
+            <span class="first-fill">1</span>
+            <span class="first-open">2</span>
+            <span class="second-fill">3</span>
+            <span class="second-open">4</span>
+            <span class="third-under">5</span>
+            <span class="third-over">6</span>
+            <span class="fourth">7</span>
+            <span class="fifth">8</span>
+            <span class="sixth">9</span>
+        </h3>
+    </div>
+</body>
+
+</html>

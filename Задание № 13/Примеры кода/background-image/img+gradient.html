@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>background-image+gradient</title>
+    <style>
+        /* поменяйте местами настройки фона, оцените изменения */
+        .first {
+            width: 45%;
+            height: 500px;
+            margin-bottom: 2%;
+            background-image:
+                linear-gradient(to bottom,
+                    rgba(255, 255, 0, 0.5),
+                    rgba(0, 0, 255, 0.5)),
+                url("images/duck.png");
+        }
+
+        .second {
+            width: 45%;
+            height: 500px;
+            background-image: url("images/duck-big.png"), url("images/bg.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Совмещаем несколько видов фона для одного блока</h1>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+</body>
+
+</html>

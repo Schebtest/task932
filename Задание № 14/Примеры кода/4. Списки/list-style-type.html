@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-style-type</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style-type: disc;
+            /* list-style-type: circle; */
+            /* list-style-type: square; */
+            /* list-style-type: decimal; */
+            /* list-style-type: upper-roman; */
+            /* list-style-type: lower-roman; */
+            /* list-style-type: '\2717'; */
+
+        }
+
+        ol {
+            /* list-style-type: disc; */
+            /* list-style-type: circle; */
+            /* list-style-type: square; */
+            /* list-style-type: decimal; */
+            /* list-style-type: upper-roman; */
+            list-style-type: lower-roman;
+            /* list-style-type: '\2717'; */
+        }
+
+        ul.image {
+            list-style-image: url("balloon-heart-fill.svg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Два варианта списка: нумерованный и маркированный</h1>
+        <h2>Меняйте настройки маркера, выбирайте понравившийся вариант</h2>
+        <div>
+            <ul>
+                <li>Имейте ввиду, что нестандратные маркеры</li>
+                <li>делают ваш дизайн уникальным</li>
+                <li>но достаточно сложно поддаются стилизации</li>
+            </ul>
+            <ol>
+                <li>мне в этом смысле больше нравится</li>
+                <li>подход с использованием изображений вместо маркеров</li>
+                <li>так сделан следующий список</li>
+            </ol>
+            <ul class="image">
+                <li>Это могут быть изображения в разных форматах</li>
+                <li>Желательно чтобы они были векторными</li>
+                <li>Чтобы масштабироваться при изменении размера страницы</li>
+            </ul>
+        </div>
+        <h2>Интересно, что мы можем задать маркированному списку указатель в виде цифры и наоборот. Не надо так... все
+            таки смысл маркированных список в простом перечислении, а нумерованных в указании точного порядка. </h2>
+    </div>
+</body>
+
+</html>

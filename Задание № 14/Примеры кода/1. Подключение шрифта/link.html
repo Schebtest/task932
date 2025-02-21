@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подключение шрифтов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p.lora {
+            font-family: "Lora";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Подключение с помощью link</h2>
+        <p>На серверах Google хранится огромное количество шрифтов. Вы можете подключить их к своему проекту через
+            сервисы на сайте https://fonts.google.com/.</p>
+        <p>Выбираем шрифт, используя систему фильтрации на сайте. Подключаем необходимые начертания и копируем код для
+            загрузки шрифта на нашу страницу.</p>
+        <p>Подключить их можно, как и файлы стилей, через элемент link на самой странице или через специальное медиа
+            правило в файле со стилями. После этого можно использовать шрифт в свойстве font-family без каких-либо
+            дополнительных действий. </p>
+        <p class="lora">Все предыдущие абзацы оформлены шрифтом по умолчанию. А вот текущему задали свой собственный
+            шрифт с красивым названием Lora.</p>
+    </div>
+</body>
+
+</html>

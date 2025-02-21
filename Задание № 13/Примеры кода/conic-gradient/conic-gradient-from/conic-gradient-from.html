@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic-gradient-from</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.block#first {
+            background: conic-gradient(from 20deg, #011923, #0c8bd0);
+        }
+
+        div.block#second {
+            background: conic-gradient(from 45deg, #390655, #dd59ad, #f0f2d4);
+        }
+
+        div.block#third {
+            background: conic-gradient(from 180deg, #11f039 20%, #0d621d 60%, #ffd900, #e6d4bd);
+        }
+
+        div.block#fourth {
+            background: conic-gradient(from 300deg, #4d06a4, transparent, #ff0000 50%, #2b0d57);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Конический градиент с изменением угла</h1>
+
+    <div class="container">
+
+        <div class="block" id="first">
+            <span>from 20deg</span>
+        </div>
+
+        <div class="block" id="second">
+            <span>from 45deg</span>
+        </div>
+
+        <div class="block" id="third">
+            <span>from 180deg</span>
+        </div>
+
+        <div class="block" id="fourth">
+            <span>from 300deg</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

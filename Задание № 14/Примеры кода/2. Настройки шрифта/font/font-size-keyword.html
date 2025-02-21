@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size. Ключевые слова</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        .xx-small {
+            font-size: xx-small;
+        }
+
+        .x-small {
+            font-size: x-small;
+        }
+
+        .small {
+            font-size: small;
+        }
+
+        .medium {
+            font-size: medium;
+        }
+
+        .large {
+            font-size: large;
+        }
+
+        .x-large {
+            font-size: x-large;
+        }
+
+        .xx-large {
+            font-size: xx-large;
+        }
+
+        .block_rel {
+            font-size: 24px;
+        }
+
+        .smaller {
+            font-size: smaller;
+        }
+
+        .larger {
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Будем использовать для указания размера ключевые слова</h1>
+        <h2>Первый набор ключевых слов установит абсолютный размер тексту, основанный на размере шрифта пользователя по
+            умолчанию</h2>
+        <div class="abs">
+            <p class="xx-small">xx-small | 9px | Очень маленький размер шрифта, </p>
+            <p class="x-small">x-small | 10px | Не намного лучше, особенно с моим зрением(</p>
+            <p class="small">small | 13px | Мелковато, но уже читаемо</p>
+            <p class="medium">medium | 16px | Если сравнивать с первым вариантом, то это просто услада для глаз...</p>
+            <p class="large">large | 18px | Очень хорошо</p>
+            <p class="x-large">x-large | 24px | Просто замечательно</p>
+            <p class="xx-large">xx-large | 32px | Вот теперь можно снимать очки!</p>
+        </div>
+
+
+        <h2>Для блока ниже зададим размер шрифта 24px</h2>
+        <h2>И для абзацев внутри укажем размер относительно него. Изменяйте родительский размер, следите за изменениями.
+        </h2>
+        <div class="block_rel">
+            <p class="smaller">Текст размером меньше, чем родительский.</p>
+            <p>Собственно обычный размер, который унаследован от div.block</p>
+            <p class="larger">Текст размером больше, чем родительский.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

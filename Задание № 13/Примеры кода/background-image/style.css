@@ -1,0 +1,24 @@
+div.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 2em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+div.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	color: white;
+}

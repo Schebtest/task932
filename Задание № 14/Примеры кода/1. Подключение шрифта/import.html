@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подключение шрифтов</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Open+Sans&display=swap");
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p.lora {
+            font-family: "Lora";
+        }
+
+        p.alternative {
+            font-family: "Lora", Arial, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Подключение с помощью import</h2>
+        <p>Подключение точно такого же шрифта как в предыдущем примере, но уже в блоке style. Или это может быть
+            страница
+            style.css.</p>
+        <p class="lora">И снова предыдущий абзац написаны стандартным шрифтом, а текущий шрифтом Lora.</p>
+        <p class="alternative">Попробуем еще один вариант и для этого абзаца установим по очереди: шрифт Lora,
+            подружаемый
+            из сети; шрифт Arial, стандартный из папки windows/fonts; семейство шрифтов serif на случай если все
+            остальные
+            недоступны</p>
+        <p class="alternative">Теперь отключите интернет и обновите страницу через Shift+F5. Оцените произошедщие
+            изменения.</p>
+    </div>
+</body>
+
+</html>

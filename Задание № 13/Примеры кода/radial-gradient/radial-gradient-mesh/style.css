@@ -1,0 +1,25 @@
+div.container{
+    display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+div.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 45%;
+    height: 300px;
+    color: white;
+}
+

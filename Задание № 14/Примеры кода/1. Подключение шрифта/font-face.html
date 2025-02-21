@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подключение шрифтов</title>
+    <style>
+        @font-face {
+            font-family: 'Lora';
+            font-style: normal;
+            src: url("fonts/lora/Lora-Regular.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Lora";
+            font-weight: bold;
+            src: url("fonts/lora/Lora-Bold.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Lora";
+            font-style: italic;
+            src: url("fonts/lora/Lora-Italic.ttf") format("truetype");
+        }
+
+        /* Отключите один из вариантов шрифта и посмотрите как изменится текст внутри соответствующего абзаца */
+
+        p.regular {
+            font-family: "Lora";
+            font-style: normal;
+        }
+
+        p.bold {
+            font-family: "Lora";
+            font-weight: bold;
+        }
+
+        p.italic {
+            font-family: "Lora";
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Подключение с помощью @font-face</h2>
+        <p class="regular">Подключаем шрифт с помощью правила @font-face. Для каждого варианта шрифта свое подключение и
+            свой файл. </p>
+        <p class="bold">Обязательно указываем в каком случвае будем использовать указанный файл: для определенного
+            размера, начертания или стиля текста.</p>
+        <p class="italic">Что интересно, если мы отключим курсивный вариант шрифта Lora, браузер сделает его
+            псевдокурсивным, задав наклон стандартному варианту.</p>
+    </div>
+</body>
+
+</html>

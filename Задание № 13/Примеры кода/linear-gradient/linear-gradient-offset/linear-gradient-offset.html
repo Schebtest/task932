@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear-gradient-offset</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.block#first{
+            background:linear-gradient(#011923, 10%, #75cfff);
+        }
+
+        div.block#second{
+            background:linear-gradient(#011923, 70%, #75cfff);
+        }
+
+        div.block#third{
+            background:linear-gradient(#011923, 50%, #75cfff);        
+        }
+
+        div.block#fourth{
+            background:linear-gradient(#011923, #75cfff);
+        }
+
+        
+        div.block#fifth{
+            background:linear-gradient(#011923, 100px, #75cfff);
+        }
+
+        div.block#sixth{
+            background:linear-gradient(#011923, 250px, #75cfff);
+        }
+    </style>
+</head>
+<body>
+    <h1>background:linear-gradient(XXX, % / px, XXX);</h1>
+    <div class="container">
+        <div class="block" id="first">
+            <span>10%</span>
+        </div>
+        <div class="block" id="second">
+            <span>70%</span>
+        </div>
+        <div class="block" id="third">
+            <span>50%</span>
+        </div>
+        <div class="block" id="fourth">
+            <span>по умолчанию 50% <br> для двух цветов</span>
+        </div>
+        <div class="block" id="fifth">
+            <span>100px</span>
+        </div>
+        <div class="block" id="sixth">
+            <span>250px</span>
+        </div>
+    </div>
+</body>
+</html>

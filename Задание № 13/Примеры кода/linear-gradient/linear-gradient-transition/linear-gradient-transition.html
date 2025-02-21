@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear-gradient-transition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.block#first{
+            background:linear-gradient(#0004ff,#12a4ff,#9f0fff,#f538f2);
+        }
+
+        div.block#second{
+            background:linear-gradient(#0004ff 25%,#12a4ff 25% 50%,#9f0fff 50% 75%,#f538f2 75%)
+        }
+
+        div.block#third{
+            background:linear-gradient(#0004ff,#12a4ff 40%,#9f0fff 50%,#f538f2);       
+        }
+
+        div.block#fourth{
+            background:linear-gradient(#0004ff 50%,#12a4ff,#9f0fff,#f538f2);
+        }
+
+        
+        div.block#fifth{
+            background:linear-gradient(#0004ff 10%,#12a4ff 40px, #9f0fff 80px,#f538f2);
+        }
+
+        div.block#sixth{
+            background:linear-gradient(#0004ff 40px,#12a4ff 50px 150px,#9f0fff,#f538f2 75%)}
+    </style>
+</head>
+<body>
+    <h1>background:linear-gradient<br>(XXX %/px, XXX %/px, XXX %/px);</h1>
+    <div class="container">
+        <div class="block" id="first">
+            <span>по умолчанию</span>
+        </div>
+        <div class="block" id="second">
+            <span>жесткие полосы</span>
+        </div>
+        <div class="block" id="third">
+            <span>переход для средних цветов</span>
+        </div>
+        <div class="block" id="fourth">
+            <span>переход для первого цвета</span>
+        </div>
+        <div class="block" id="fifth">
+            <span>переход для трех цветов</span>
+        </div>
+        <div class="block" id="sixth">
+            <span>начало и конец для второго цвета</span>
+        </div>
+    </div>
+</body>
+</html>

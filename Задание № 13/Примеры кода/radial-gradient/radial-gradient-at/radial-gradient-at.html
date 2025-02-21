@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial-gradient-at</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.block#first {
+            background: radial-gradient(at 0% 30%, #011923, #0c8bd0);
+        }
+
+        div.block#second {
+            width: 60%;
+            background: radial-gradient(at 80% 70%, #390655, #dd59ad, #f0f2d4);
+        }
+
+        div.block#third {
+            height: 500px;
+            background: radial-gradient(at 15%, #11f039, #0d621d, #ffd900, #e6d4bd);
+        }
+        /* сделайте копии блока и поэкспериментируйте со значениями направлений: left, right, top и bottom  в сочетании с circle и ellipse*/
+        div.block#fourth {
+            height: 500px;
+            width: 60%;
+            background: radial-gradient(circle at right, #4d06a4, transparent, #ff0000, #2b0d57);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Радиальный градиент со смещенным центром</h1>
+
+    <div class="container">
+
+        <div class="block" id="first">
+            <span>at 0% 30%</span>
+        </div>
+
+        <div class="block" id="second">
+            <span>at 80% 70%</span>
+        </div>
+
+        <div class="block" id="third">
+            <span>at 15%</span>
+        </div>
+
+        <div class="block" id="fourth">
+            <span>circle at right</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

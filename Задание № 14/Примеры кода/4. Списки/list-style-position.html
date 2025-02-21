@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-style-position</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+
+        .clean {
+            padding: 0;
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: disc;
+            /* list-style-type: circle; */
+            /* list-style-type: square; */
+            /* list-style-type: decimal; */
+            /* list-style-type: upper-roman; */
+            /* list-style-type: lower-roman; */
+            /* list-style-type: '\2717'; */
+
+        }
+
+        ol {
+            list-style-position: outside;
+            list-style-type: disc;
+            /* list-style-type: circle; */
+            /* list-style-type: square; */
+            /* list-style-type: decimal; */
+            /* list-style-type: upper-roman; */
+            /* list-style-type: lower-roman; */
+            /* list-style-type: '\2717'; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Два варианта списка: нумерованный и маркированный</h1>
+        <h2>Два варианта расположения: inside и outside</h2>
+        <div>
+            <ul class="border">
+                <li>Специально добавили спискам границы</li>
+                <li>Настройте также margin и padding для списков</li>
+                <li>Оцените внешний вид списка</li>
+            </ul>
+            <ol class="border">
+                <li>Наверно все уже сказано</li>
+                <li>теперь просто заполняем список</li>
+                <li>каким-то содержимым...</li>
+            </ol>
+        </div>
+        <h2>В предыдущем варианте кажется, что списки просто сместились. Поэтому поместим их в контент и уберем
+            стандартные padding-и</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, doloremque nobis nemo odit voluptatum
+                consectetur velit corrupti id eos. Reprehenderit incidunt, dolor dolores cum commodi labore atque earum
+                laudantium autem!</p>
+            <ul class="clean">
+                <li>Специально добавили спискам границы</li>
+                <li>Настройте также margin и padding для списков</li>
+                <li>Оцените внешний вид списка</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, doloremque nobis nemo odit voluptatum
+                consectetur velit corrupti id eos. Reprehenderit incidunt, dolor dolores cum commodi labore atque earum
+                laudantium autem!</p>
+            <ol class="clean">
+                <li>Наверно все уже сказано</li>
+                <li>теперь просто заполняем список</li>
+                <li>каким-то содержимым...</li>
+            </ol>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit cum consectetur esse eum soluta facilis
+                deleniti voluptas quasi eos impedit, quibusdam labore, beatae culpa nemo fuga praesentium repudiandae
+                nostrum tempora?</p>
+        </div>
+        <h2>Теперь точно видно, что во втором варианте маркеры списков сместились за границы блока. </h2>
+    </div>
+</body>
+
+</html>

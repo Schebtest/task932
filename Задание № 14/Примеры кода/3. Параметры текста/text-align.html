@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-align</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+
+        p.left {
+            text-align: left;
+        }
+
+        p.center {
+            text-align: center;
+        }
+
+        p.right {
+            text-align: right;
+        }
+
+        p.justify {
+            text-align: justify;
+            text-align-last: right;
+        }
+
+        /* добавьте вместо значения justify - justify-all и поэкспериментируйте со значениями*/
+        /* Какие значения можно заменить на start и end? Проверьте */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Одно свойство и несколько значений. И снова воспользуемся функцией lorem()
+        </h1>
+        <h3>text-align: left;</h3>
+        <p class="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, repellat nisi. Cumque
+            rem, dolores
+            laborum necessitatibus non dolorum beatae commodi aliquam magni molestias, nisi sed ut qui voluptatem nobis
+            tenetur?</p>
+        <h3>text-align: center;</h3>
+        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, repellat nisi. Cumque
+            rem, dolores
+            laborum necessitatibus non dolorum beatae commodi aliquam magni molestias, nisi sed ut qui voluptatem nobis
+            tenetur?</p>
+        <h3>text-align: right;</h3>
+        <p class="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, repellat nisi. Cumque
+            rem, dolores laborum nobis tenetur?</p>
+        <h3>text-align: justify;</h3>
+        <p class="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, repellat nisi. Cumque
+            rem, dolores
+            laborum necessitatibus non dolorum beatae commodi aliquam magni molestias, nisi sed ut qui voluptatem nobis
+            tenetur?</p>
+    </div>
+</body>
+
+</html>

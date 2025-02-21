@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic-gradient-center-atc-gradient</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* указывая цветам значения начала и конца аналогично радиальному градиенту, отредактируйте представленные блоки */
+        div.block#first {
+            background: conic-gradient(at 0% 30%, #011923, #0c8bd0);
+        }
+
+        div.block#second {
+            background: conic-gradient(at bottom, #390655, #dd59ad, #f0f2d4);
+        }
+
+        div.block#third {
+            background: conic-gradient(at left, #11f039, #0d621d, #ffd900, #e6d4bd);
+        }
+
+        div.block#fourth {
+            background: conic-gradient(at 20% 40%, #4d06a4, transparent, #ff0000, #2b0d57);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Конический градиент со смещенным центром и цветами</h1>
+
+    <div class="container">
+
+        <div class="block" id="first">
+            <span>at 0% 30%</span>
+        </div>
+
+        <div class="block" id="second">
+            <span>at bottom</span>
+        </div>
+
+        <div class="block" id="third">
+            <span>at left</span>
+        </div>
+
+        <div class="block" id="fourth">
+            <span>at 20% 40%</span>
+        </div>
+
+    </div>
+</body>
+
+</html>
