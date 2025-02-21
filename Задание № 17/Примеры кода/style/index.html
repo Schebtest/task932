@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Настройка блока</title>
+</head>
+
+<body>
+    <h1>Несмотря на то, что элементы формы имеют некоторую стилизацию по умолчанию, гораздо дучше на страницах они
+        смотрятся с дополнительными настройками</h1>
+    <h2>Форма слева с настройками по умолчанию, справа - с заданными стилями</h2>
+    <div class="container">
+        <div>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Введите имя">
+                <input type="email" name="email" id="email" placeholder="Введите адрес электронной почты">
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                <textarea name="" id="">Введите текст сообщения...</textarea>
+                <input type="button" value="Очистить">
+                <button>Отправить</button>
+            </form>
+        </div>
+        <div>
+            <form class="style">
+                <input type="text" name="name" id="name" placeholder="Введите имя">
+                <input type="email" name="email" id="email" placeholder="Введите адрес электронной почты">
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                <textarea name="" id="">Введите текст сообщения...</textarea>
+                <input type="button" value="Очистить">
+                <button>Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Сложная форма</title>
+</head>
+
+<body>
+    <h1>Форма, состоящая из элементов не поддающихся стилизации на 100%</h1>
+
+    <div class="container">
+        <form>
+            <div>
+                <label for="select">Выпадающий список: select</label>
+                <div class="select-wrapper">
+                    <select id="select" name="select">
+                        <option>Вариант 1</option>
+                        <option>Вариант 2</option>
+                        <option>Вариант 3</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="list">Еще один вариант списка: datalist</label>
+                <input type="text" name="list" id="list" list="myList">
+                <datalist id="myList">
+                    <option>Вариант 1</option>
+                    <option>Вариант 2</option>
+                    <option>Вариант 3</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="date1">Выбор даты: Datetime local </label>
+                <input id="date1" name="date1" type="datetime-local">
+            </div>
+            <div>
+                <label for="range">Ползунок: Range </label>
+                <input id="range" name="range" type="range">
+            </div>
+            <div>
+                <label for="color">Выбор цвета: Color </label>
+                <input id="color" name="color" type="color">
+            </div>
+            <div>
+                <label for="file">Выбор файла: File </label>
+                <input id="file" name="file" type="file" multiple>
+                <ul id="file-list">
+    
+                </ul>
+            </div>
+            <div>
+                <label for="progress">Уровень: Progress </label>
+                <progress max="100" value="75" id="progress">75/100</progress>
+            </div>
+            <div>
+                <label for="meter">Значение в диапазоне: Meter </label>
+                <meter id="meter" min="0" max="100" value="75" low="33" high="66" optimum="50">75</meter>
+            </div>
+            <div><button>Отправить</button></div>
+        </form>
+    </div>
+</body>
+
+</html>

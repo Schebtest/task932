@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переключатель</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* используем флексбокс, чтобы выровнять контент */
+        li {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        /* размещаем надписи on и off один под другим */
+
+        label {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            position: relative;
+        }
+
+        label span {
+            position: absolute;
+        }
+
+        /*
+           очищаем стили чекбокса и создаем заголовку под переключатель
+        */
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: 44px;
+            height: 24px;
+            border-radius: 12px;
+            border: 2px solid black;
+            background: #eee;
+        }
+
+        /*
+          псевдоэлемент ::before создает значок внутри переключателя
+        */
+
+        input[type="checkbox"]::before {
+            width: 16px;
+            height: 16px;
+            border-radius: 9px;
+            background-color: black;
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 16%;
+        }
+
+        /*
+           изменяем цвет переключателя и смещаем значок внутри него при выборе чекбокса
+        */
+
+        input[type="checkbox"]:checked {
+            background-color: #ffaa00;
+        }
+
+        input[type="checkbox"]:checked::before {
+            left: 35%;
+        }
+
+        /*
+           меняем видимость подписей в зависимости от значения чекбокса
+        */
+
+        input[type="checkbox"]~label .on,
+        input[type="checkbox"]:checked~label .off {
+            opacity: 0;
+        }
+
+        input[type="checkbox"]~label .off,
+        input[type="checkbox"]:checked~label .on {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Стилизованный checkbox</h1>
+    <!-- управлять видимостью подписи будем с помощью комбинатора ~ и прозрачности элемента-->
+    <ul>
+        <li>
+            <input type="checkbox" name="power" id="power">
+            <label for="power">
+                <span class="on">On</span>
+                <span class="off">Off</span>
+            </label>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Стилизация формы</title>
+</head>
+
+<body>
+    <h1>Используем имеющиеся знания в стилизации и настройке форм</h1>
+
+    <div class="container">
+        <form class="style">
+
+            <input type="text" name="name" id="name" placeholder="Введите имя" required>
+
+
+            <input type="email" name="email" id="email" placeholder="Введите адрес электронной почты" required>
+            <span class="error">Это поле должно содержать E-Mail в формате example@site.com</span>
+
+
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+
+            <label for="message">Введите текст сообщения</label>
+            <textarea name="message" id="message" required></textarea>
+            <span class="error">Это поле должно быть заполнено</span>
+
+
+            <input type="button" value="Очистить">
+            <button>Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>

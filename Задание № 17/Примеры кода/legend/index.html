@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Я - легенда</title>
+    <style>
+        fieldset {
+            position: relative;
+        }
+
+        legend {
+            position: absolute;
+            bottom: -7%;
+            right: -1%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Элемент legend можно стилизовать, но может быть сложно расположить его в месте отличном от верхнего левого угла
+        (по умолчанию).
+    </h1>
+    <h2> Самый простой вариант – использовать абсолютное позиционирование относительно родителя fieldset.</h2>
+
+    <div class="container">
+        <form>
+            <label>
+                Размещаем легенду в правом нижнем углу группы.
+            </label>
+            <fieldset id="fieldset">
+                <legend>Группа кнопок</legend>
+                <button>Первая</button>
+                <button>Вторая</button>
+                <button>Третья</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+	.container > div {
+		width: 400px;
+	}
+
+form {
+	padding: 4%;
+}
+
+	form > * {
+		display: block;
+		margin: 1%;
+		margin: 0 auto;
+		margin-bottom: 2%;
+	}
+	form * {
+		padding: 2%;
+		background-color: transparent;
+		color: #563939;
+	}
+
+
+
+	form input[type="text"],
+	form input[type="email"],
+	form input[type="date"],
+	form input[type="button"],
+	form textarea,
+	form select,
+	form button {
+		width: 90%;
+	}
+
+	form input {
+		border: 0;
+		border-bottom: 1px solid #785757;
+	}
+
+	form input::placeholder {
+		color: #563939;
+	}
+
+	form button,
+	form input[type="button"] {
+		border: 1px solid #785757;
+		border-radius: 8px;
+		cursor: pointer;
+	}
+
+	form button {
+		background-color: #563939;
+		color: rgb(255, 239, 219);
+	}

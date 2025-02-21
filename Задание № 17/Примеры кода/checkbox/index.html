@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Настройка элементов</title>
+    <style>
+        /* Шаг 1  Сбрасываем настройки по умолчанию*/
+        input[type="checkbox"] {
+            appearance: none;
+        }
+
+        /* Шаг 2  Задаем новые настройки*/
+        input[type="checkbox"] {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border: 3px solid rgb(86, 9, 99);
+            border-radius: 8px;
+            color: rgb(255, 0, 221);
+        }
+
+        /* Шаг 3 Добавляем новую галочку перед элементом*/
+
+        input[type="checkbox"]::before {
+            content: "✔";
+            position: absolute;
+            visibility: hidden;
+            font-size: 130px;
+            left: 20px;
+            top: -20px;
+        }
+
+        /* Шаг 4 Настраиваем показ при выборе checkbox-а*/
+
+        input[type="checkbox"]:checked::before {
+            visibility: visible;
+        }
+
+        /* Шаг 5 Настраиваем checkbox в неактивном состоянии*/
+
+        input[type="checkbox"]:disabled {
+            border-color: black;
+            background: #ddd;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Пробуем изменить настройки чекбокса.</h1>
+    <h2>Стилизация checkbox-а будет для нас состоять из нескольких этапов: удаление старых настроек; установка новых
+        настроек размера, границы и цвета содержимого; добавление нового изображения «галочки»</h2>
+
+    <div class="container">
+        <div>
+            <form>
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="" disabled>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

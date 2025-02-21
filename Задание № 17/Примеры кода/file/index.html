@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройка выбора файла</title>
+    <style>
+        /* input[type="file"] { display: none; }
+        label[for="sample"] {
+            display: block;
+            width: 200px;
+            padding: 2%;
+            border: 1px solid #560963;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #cecccc, #560963);
+            text-align: center;
+            color: #fff;
+            font-size: 1.3em;
+        }
+
+        label[for="sample"]:hover {
+            background: linear-gradient(to bottom, #fff, #8a1b9d);
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Воспользуемся связью между элементами label и input через атрибут for. </h1>
+    <h2>Скроем input, а label стилизуем под кнопку.</h2>
+
+    <div class="container">
+        <div>
+            <form>
+                <label for="sample">Выберите файл...</label>
+                <p></p>
+                <input type="file" name="sample" id="sample">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

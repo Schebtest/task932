@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Текстовая область</title>
+    <style>
+        textarea {
+            resize: both;
+            /* resize: none; */
+            /* resize: horizontal; */
+            /* resize: vertical; */
+
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            /* overflow: visible; */
+            /* overflow: hidden; */
+            overflow: clip;
+            overflow-clip-margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Элементы textarea по умолчанию отображаются как встроенные блочные элементы.
+    </h1>
+    <h2>Для их настройки кроме указания на количество строк и символов важно знать и применять свойства resize и
+        overflow. </h2>
+
+    <div class="container">
+        <form>
+            <label for="message">Оставьте свое сообщение:</label>
+
+            <textarea id="message" name="message" rows="5"
+                cols="33">Здравствуйте, меня зовут Татьяна и я ... Хммм... пожалуй самостоятельно наполните блок контентом и проверьте как работают закомментированные свойства.</textarea>
+
+        </form>
+    </div>
+</body>
+
+</html>

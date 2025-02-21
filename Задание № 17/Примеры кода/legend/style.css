@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	padding: 4%;
+}
+
+form * {
+	display: block;
+	margin: 1%;
+	margin-bottom: 2%;
+	padding: 2%;
+	background-color: transparent;
+	color: #563939;
+}
+
+form button {
+	width: 50%;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: #563939;
+	color: rgb(255, 239, 219);
+}

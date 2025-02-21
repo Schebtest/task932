@@ -1,0 +1,11 @@
+.container > div {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+input[type="checkbox"] {
+	display: inline-block;
+	margin-right: 3%;
+	margin-bottom: 2%;
+}

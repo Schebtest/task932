@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройка блока</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        form {
+            max-width: 300px;
+        }
+
+        form>* {
+            display: block;
+            margin: 1%;
+        }
+
+        form.select input:not([type=radio]),
+        form.select textarea,
+        form.select select,
+        form.select button {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Чтобы придать одинаковый размер нескольким различным виджетам, вы можете использовать свойство box-sizing вместе
+        с некоторыми согласованными значениями для других свойств</h1>
+    <h2>Форма слева с настройками по умолчанию, справа - с заданным размером</h2>
+    <div class="container">
+        <div>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Введите имя">
+                <input type="email" name="email" id="email" placeholder="Введите адрес электронной почты">
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                <select name="state" id="state">
+                    <option value="student">Студент</option>
+                    <option value="teacher">Педагог</option>
+                    <option value="other">Другое</option>
+                </select>
+                <div>
+                    <input type="radio" name="lvl" id="junior">junior
+                    <input type="radio" name="lvl" id="middle">middle
+                    <input type="radio" name="lvl" id="senior">senior
+                </div>
+                <textarea name="" id="">Введите текст сообщения...</textarea>
+                <div>
+                    <input type="checkbox" name="personal" id="personal">
+                    <label for="personal">С правилами согласен</label>
+                </div>
+                <input type="button" value="Очистить">
+                <button>Отправить</button>
+            </form>
+        </div>
+        <div>
+            <form class="select">
+                <input type="text" name="name" id="name" placeholder="Введите имя">
+                <input type="email" name="email" id="email" placeholder="Введите адрес электронной почты">
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                <select name="state" id="state">
+                    <option value="student">Студент</option>
+                    <option value="teacher">Педагог</option>
+                    <option value="other">Другое</option>
+                </select>
+                <div>
+                    <input type="radio" name="lvl" id="junior">junior
+                    <input type="radio" name="lvl" id="middle">middle
+                    <input type="radio" name="lvl" id="senior">senior
+                </div>
+                <textarea name="" id="">Введите текст сообщения...</textarea>
+                <div>
+                    <input type="checkbox" name="personal" id="personal">
+                    <label for="personal">С правилами согласен</label>
+                </div>
+                <input type="button" value="Очистить">
+                <button>Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

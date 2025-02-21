@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Настройка элементов</title>
+    <style>
+        /* Шаг 1  Сбрасываем настройки по умолчанию*/
+        input[type="radio"] {
+            appearance: none;
+        }
+
+        /* Шаг 2  Задаем новые настройки*/
+        input[type="radio"] {
+            width: 100px;
+            height: 100px;
+            border: 3px solid rgb(86, 9, 99);
+            border-radius: 50%;
+            vertical-align: -2px;
+            outline: none;
+            position: relative;
+        }
+
+        /* Шаг 3 Добавляем новое заполнение для радиокнопки*/
+
+        input[type="radio"]::before {
+            content: " ";
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgb(86, 9, 99);
+            font-size: 1.2em;
+            display: none;
+            position: absolute;
+            left: 7px;
+            top: 7px;
+        }
+
+        /* Шаг 4 Настраиваем показ при выборе радиокнопки*/
+
+        input[type="radio"]:checked::before {
+            display: block;
+        }
+
+        /* Шаг 5 Настраиваем радиокнопку в неактивном состоянии*/
+
+        input[type="radio"]:disabled {
+            border-color: rgb(74, 74, 74);
+            background: rgb(198, 179, 196);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Пробуем изменить настройки радиокнопки.</h1>
+    <h2>Стилизация будет для нас состоять из нескольких этапов: удаление старых настроек; установка новых
+        настроек размера, границы и цвета содержимого; добавление нового изображения «галочки»</h2>
+
+    <div class="container">
+        <div>
+            <form>
+                <input type="radio" name="sample" id="">
+                <input type="radio" name="sample" id="">
+                <input type="radio" name="sample" id="" disabled>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
