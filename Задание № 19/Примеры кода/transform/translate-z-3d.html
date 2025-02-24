@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform и transition</title>
+    <link rel="stylesheet" href="style-3d.css">
+    <style>
+        section {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px);
+        }
+
+        p {
+            margin-bottom: 2em;
+        }
+
+        /* -----------Translate3d------------ */
+
+        .t3d-1:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translate3d(0px, 0px, 0px);
+        }
+
+        .t3d-2:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translate3d(42px, -62px, -135px);
+        }
+
+        .t3d-3:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translate3d(-2.7rem, 0, 1rem);
+        }
+
+        .t3d-4:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translate3d(80px, 100px, 50px);
+        }
+
+        /* -----------TranslateZ------------ */
+        .tz-1:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translateZ(0px);
+        }
+
+        .tz-2:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translateZ(70px);
+        }
+
+        .tz-3:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translateZ(-100px);
+        }
+
+        .tz-4:hover {
+            transform: rotate3d(1, 1, 0, 20deg) perspective(500px) translateZ(-150px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Перемещение</h1>
+
+    <h2>translate3d()</h2>
+    <div class="container">
+        <div>
+            <p>translate3d(0px, 0px, 0px)</p>
+            <section id="example-element" class="t3d-1">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translate3d(42px, -62px, -135px)</p>
+            <section id="example-element" class="t3d-2">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translate3d(-2.7rem, 0, 1rem)</p>
+            <section id="example-element" class="t3d-3">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translate3d(80px, 100px, 50px)</p>
+            <section id="example-element" class="t3d-4">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <h2>translateZ()</h2>
+    <div class="container">
+        <div>
+            <p>translateZ(0px);</p>
+            <section id="example-element" class="tz-1">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translateZ(70px);</p>
+            <section id="example-element" class="tz-2">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translateZ(-100px);</p>
+            <section id="example-element" class="tz-3">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translateZ(-150px);</p>
+            <section id="example-element" class="tz-4">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

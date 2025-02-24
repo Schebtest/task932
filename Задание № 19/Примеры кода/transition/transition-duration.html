@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition и собачки</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bn-1:hover {
+            filter: brightness(0);
+            transition-duration: 1s;
+        }
+
+        .bn-2:hover {
+            filter: brightness(25%);
+            transition-duration: 2s;
+        }
+
+        .bn-3:hover {
+            filter: brightness(50%);
+            transition-duration: 3s;
+        }
+
+        .bn-4:hover {
+            filter: brightness(200%);
+            transition-duration: 4s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Управляем временем)</h1>
+
+    <h2>Transition-duration</h2>
+    <div class="container brightness">
+        <div>
+            <p>transition-duration(50ms)</p>
+            <img src="images/knight.jpg" class="bn-1" alt="Собачка рыцарь">
+        </div>
+        <div>
+            <p>transition-duration(100ms)</p>
+            <img src="images/knight.jpg" class="bn-2" alt="Собачка рыцарь">
+        </div>
+        <div>
+            <p>transition-duration(1s)</p>
+            <img src="images/knight.jpg" class="bn-3" alt="Собачка рыцарь">
+        </div>
+        <div>
+            <p>transition-duration(2s)</p>
+            <img src="images/knight.jpg" class="bn-4" alt="Собачка рыцарь">
+        </div>
+    </div>
+</body>
+
+</html>

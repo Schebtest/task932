@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform и transition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* -----------Translate------------ */
+        .t-1 {
+            transform: translate(70px);
+        }
+
+        .t-2 {
+            transform: translate(0px, 30px);
+        }
+
+        .t-3 {
+            transform: translate(-20px, -20px);
+        }
+
+        .t-4 {
+            transform: translate(40px, -30px);
+        }
+
+        /* -----------TranslateX------------ */
+        .tx-1 {
+            transform: translateX(100px);
+        }
+
+        .tx-2 {
+            transform: translateX(-100px);
+        }
+
+        /* -----------TranslateY------------ */
+        .ty-1 {
+            transform: translateY(70px);
+        }
+
+        .ty-2 {
+            transform: translateY(-70px);
+        }
+
+        .before{
+            opacity: 0.5;
+            position: absolute;
+        }
+        p{
+            margin-bottom: 2em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Перемещение</h1>
+    <h2>translate()</h2>
+    <div class="container">
+        <div>
+            <p>translate(30px);</p>
+            <img src="images/eater.jpg" class="before" alt="Вечерний ужин">
+            <img src="images/eater.jpg" class="t-1" alt="Вечерний ужин">
+        </div>
+        <div>
+            <p>translate(0px, 20px);</p>
+            <img src="images/eater.jpg" class="before" alt="Вечерний ужин">
+            <img src="images/eater.jpg" class="t-2" alt="Вечерний ужин">
+        </div>
+        <div>
+            <p>translate(-10px, -10px);</p>
+            <img src="images/eater.jpg" class="before" alt="Вечерний ужин">
+            <img src="images/eater.jpg" class="t-3" alt="Вечерний ужин">
+        </div>
+        <div>
+            <p>translate(30px, -20px);</p>
+            <img src="images/eater.jpg" class="before" alt="Вечерний ужин">
+            <img src="images/eater.jpg" class="t-4" alt="Вечерний ужин">
+        </div>
+    </div>
+
+    <h2>translateX()</h2>
+    <div class="container">
+        <div>
+            <p>translateX(100px);</p>
+            <img src="images/swimmer.jpg" class="before" alt="Пловец">
+            <img src="images/swimmer.jpg" class="tx-1" alt="Пловец">
+        </div>
+        <div>
+            <p>translateX(-100px);</p>
+            <img src="images/swimmer.jpg" class="before" alt="Пловец">
+            <img src="images/swimmer.jpg" class="tx-2" alt="Пловец">
+        </div>
+    </div>
+
+    <h2>translateY()</h2>
+    <div class="container">
+        <div>
+            <p>translateY(70px);</p>
+            <img src="images/fluffy.jpg" class="before" alt="Очень пушистая собака">
+            <img src="images/fluffy.jpg" class="ty-1" alt="Очень пушистая собака">
+        </div>
+        <div>
+            <p>translateY(-70px);</p>
+            <img src="images/fluffy.jpg" class="before" alt="Очень пушистая собака">
+            <img src="images/fluffy.jpg" class="ty-2" alt="Очень пушистая собака">
+        </div>
+    </div>
+
+</body>
+
+</html>

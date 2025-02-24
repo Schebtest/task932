@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform и transition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* -----------Skew------------ */
+        .sw-1:hover {
+            transform: skew(10deg, 10deg);
+        }
+
+        .sw-2:hover {
+            transform: skew(-10deg, -10deg);
+        }
+
+        .sw-3:hover {
+            transform: skew(40deg);
+        }
+
+        .sw-4:hover {
+            transform: skew(0deg, 10deg);
+        }
+
+        /* -----------SkewX------------ */
+        .swx-1:hover {
+            transform: skewX(10deg);
+        }
+
+        .swx-2:hover {
+            transform: skewX(40deg);
+        }
+
+        .swx-3:hover {
+            transform: skewX(130deg);
+        }
+
+        .swx-4:hover {
+            transform: skewX(-10deg);
+        }
+
+        /* -----------SkewY------------ */
+        .swy-1:hover {
+            transform: skewY(10deg);
+        }
+
+        .swy-2:hover {
+            transform: skewY(50deg);
+        }
+
+        .swy-3:hover {
+            transform: skewY(-10deg);
+        }
+
+        .swy-4:hover {
+            transform: skewY(-50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Искажение</h1>
+    <h2>skew()</h2>
+    <div class="container">
+        <div>
+            <p>skew(10deg, 10deg);</p>
+            <img src="images/afro.jpg" class="sw-1" alt="Пёс с афро">
+        </div>
+        <div>
+            <p>skew(-10deg, -10deg);</p>
+            <img src="images/afro.jpg" class="sw-2" alt="Пёс с афро">
+        </div>
+        <div>
+            <p>skew(40deg);</p>
+            <img src="images/afro.jpg" class="sw-3" alt="Пёс с афро">
+        </div>
+        <div>
+            <p>skew(0deg, 10deg);</p>
+            <img src="images/afro.jpg" class="sw-4" alt="Пёс с афро">
+        </div>
+    </div>
+
+    <h2>skewX()</h2>
+    <div class="container">
+        <div>
+            <p>skewX(10deg);</p>
+            <img src="images/bread.jpg" class="swx-1" alt="Сложная ситуация...">
+        </div>
+        <div>
+            <p>skewX(40deg);</p>
+            <img src="images/bread.jpg" class="swx-2" alt="Сложная ситуация...">
+        </div>
+        <div>
+            <p>skewX(130deg);</p>
+            <img src="images/bread.jpg" class="swx-3" alt="Сложная ситуация...">
+        </div>
+        <div>
+            <p>skewX(-10deg);</p>
+            <img src="images/bread.jpg" class="swx-4" alt="Сложная ситуация...">
+        </div>
+    </div>
+
+    <h2>skewY()</h2>
+    <div class="container">
+        <div>
+            <p>skewY(10deg);</p>
+            <img src="images/gentleman.jpg" class="swy-1" alt="Настоящий джентльмен">
+        </div>
+        <div>
+            <p>skewY(50deg);</p>
+            <img src="images/gentleman.jpg" class="swy-2" alt="Настоящий джентльмен">
+        </div>
+        <!-- <div>
+            <p>skewY(-10deg);</p>
+            <img src="images/gentleman.jpg" class="swy-3" alt="Настоящий джентльмен">
+        </div>
+        <div>
+            <p>skewY(-50deg);</p>
+            <img src="images/gentleman.jpg" class="swy-4" alt="Настоящий джентльмен">
+        </div> -->
+    </div>
+</body>
+
+</html>

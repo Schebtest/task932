@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition и собачки</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dogs:hover {
+            filter: hue-rotate(280deg);
+        }
+
+        .change-size {
+            max-width: 200px;
+            height: 300px;
+            background-color: rgb(52, 1, 100);
+        }
+
+        .change-size:hover {
+            max-width: 800px;
+            background-color: rgb(100, 1, 88);
+        }
+
+        .cont-1:hover {
+            transition-timing-function: ease;
+            transition-duration: 3s;
+        }
+
+        .cont-2:hover {
+            transition-timing-function: linear;
+            transition-duration: 3s;
+        }
+
+        .cont-3:hover {
+            transition-timing-function: ease-in;
+            transition-duration: 3s;
+        }
+
+        .cont-4:hover {
+            transition-timing-function: ease-out;
+            transition-duration: 3s;
+        }
+
+        .cont-5:hover {
+            transition-timing-function: steps(8, start);
+            transition-duration: 3s;
+        }
+
+        .cont-6:hover {
+            transition-timing-function: steps(8, end);
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Настройки изображения</h1>
+    <h2>Transition-timing-function</h2>
+    <div class="container">
+        <div>
+            <p>transition-timing-function: ease;</p>
+            <img src="images/friend.jpg" class="dogs cont-1" alt="Братаны">
+        </div>
+        <div>
+            <p>transition-timing-function: linear;</p>
+            <img src="images/friend.jpg" class="dogs cont-2" alt="Братаны">
+        </div>
+        <div>
+            <p>transition-timing-function: ease-in;</p>
+            <img src="images/friend.jpg" class="dogs cont-3" alt="Братаны">
+        </div>
+        <div>
+            <p>transition-timing-function: ease-out;</p>
+            <img src="images/friend.jpg" class="dogs cont-4" alt="Братаны">
+        </div>
+    </div>
+    <div class="container block">
+        <div>
+            <p>transition-timing-function:ease;</p>
+            <div class="change-size cont-1"></div>
+        </div>
+        <div>
+            <p>transition-timing-function:linear;</p>
+            <div class="change-size cont-2"></div>
+        </div>
+        <div>
+            <p>transition-timing-function:ease-in;</p>
+            <div class="change-size cont-3"></div>
+        </div>
+        <div>
+            <p>transition-timing-function:ease-out;</p>
+            <div class="change-size cont-4"></div>
+        </div>
+        <div>
+            <p>transition-timing-function: steps(8, start);</p>
+            <div class="change-size cont-5"></div>
+        </div>
+        <div>
+            <p>transition-timing-function: steps(8, start);</p>
+            <div class="change-size cont-6"></div>
+        </div>
+    </div>
+</body>
+
+</html>

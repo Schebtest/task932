@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform и transition</title>
+    <link rel="stylesheet" href="style-3d.css">
+    <style>
+        section {
+            transform: translateZ(100px);
+        }
+
+        /* -----------Perspective------------ */
+        .pv-1:hover {
+            transform: translateZ(100px) perspective(50px);
+        }
+
+        .pv-2:hover {
+            transform: translateZ(100px) perspective(100px);
+        }
+
+        .pv-3:hover {
+            transform: translateZ(100px) perspective(200px);
+        }
+
+        .pv-4:hover {
+            transform: translateZ(100px) perspective(400px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Перспектива</h1>
+    <div class="container">
+        <div>
+            <p>translateZ(100px) perspective(50px);</p>
+            <section id="example-element" class="pv-1">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translateZ(100px) perspective(100px)</p>
+            <section id="example-element" class="pv-2">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translateZ(100px) perspective(200px)</p>
+            <section id="example-element" class="pv-3">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>translateZ(100px) perspective(400px)</p>
+            <section id="example-element" class="pv-4">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

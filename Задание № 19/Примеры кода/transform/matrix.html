@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform и transition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* -----------Matrix------------ */
+        .mx-1:hover {
+            transform: matrix(1, 0.1, 0, 1, 0, 0);
+        }
+
+        .mx-2:hover {
+            transform: matrix(1, 0, 0.2, 1, 0, 0);
+        }
+
+        .mx-3:hover {
+            transform: matrix(1, 0, 0, 1.3, 0, 30);
+        }
+
+        .mx-4:hover {
+            transform: matrix(0.7, 0.5, -0.5, 0.7, 30, 30);
+        }
+
+        /* -----------Matrix3d------------ */
+        .mx3d-1:hover {
+            transform: matrix3d(0.7, 0.4, 0, 0, 0.1, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+                    }
+
+        .mx3d-2:hover {
+            transform: matrix3d(1, 0, 0, 0.002, 0, 1, 0, 0.002, 0, 0, 1, 0, 40, 30, 0, 1.2);
+                    }
+
+        .mx3d-3:hover {
+            transform: matrix3d(0.5, 0.2, 0, 0.001, -0.2, 1, 0, -0.001, 0, 0, 1, 0, 0, 0, 0, 1.2);
+           
+        }
+
+        .mx3d-4:hover {
+            transform: matrix3d(0.5, 0, 0, -0.002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Матричное преобразование</h1>
+    <h2>Matrix</h2>
+    <div class="container">
+        <div>
+            <p>matrix(1, 0.1, 0, 1, 0, 0);</p>
+            <img src="images/friend.jpg" class="mx-1" alt="Дружная парочка">
+        </div>
+        <div>
+            <p>matrix(1, 0, 0.2, 1, 0, 0);</p>
+            <img src="images/friend.jpg" class="mx-2" alt="Дружная парочка">
+        </div>
+        <div>
+            <p>matrix(1, 0, 0, 1.3, 0, 30);</p>
+            <img src="images/friend.jpg" class="mx-3" alt="Дружная парочка">
+        </div>
+        <div>
+            <p>matrix(0.7, 0.5, -0.5, 0.7, 30, 30);</p>
+            <img src="images/friend.jpg" class="mx-4" alt="Дружная парочка">
+        </div>
+    </div>
+
+    <h2>Matrix3d</h2>
+    <div class="container">
+        <div>
+            <p>matrix3d(0.7, 0.4, 0, 0, 0.1, 0.5, <br> 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);</p>
+            <img src="images/singer.jpg" class="mx3d-1" alt="Щас спою!">
+        </div>
+        <div>
+            <p>matrix3d(1, 0, 0, 0.002, 0, 1, 0, <br>0.002, 0, 0, 1, 0, 40, 30, 0, 1.2);</p>
+            <img src="images/singer.jpg" class="mx3d-2" alt="Щас спою!">
+        </div>
+        <div>
+            <p>matrix3d(0.5, 0.2, 0, 0.001, -0.2, 1,<br> 0, -0.001, 0, 0, 1, 0, 0, 0, 0, 1.2);</p>
+            <img src="images/singer.jpg" class="mx3d-3" alt="Щас спою!">
+        </div>
+        <div>
+            <p>matrix3d(0.5, 0, 0, -0.002, 0, 1, 0,<br> 0, 0, 0, 1, 0, 0, 0, 0, 1.2);</p>
+            <img src="images/singer.jpg" class="mx3d-4" alt="Щас спою!">
+        </div>
+    </div>
+</body>
+
+</html>

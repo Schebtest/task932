@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: rotate</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* -----------Rotate------------ */
+        .r-1:hover {
+            transform: rotate(0);
+        }
+
+        .r-2:hover {
+            transform: rotate(10deg);
+        }
+
+        .r-3:hover {
+            transform: rotate(-90deg);
+        }
+
+        .r-4:hover {
+            transform: rotate(180deg);
+        }
+
+        /* -----------RotateX------------ */
+        .rx-1:hover {
+            transform: rotateX(20deg);
+        }
+
+        .rx-2:hover {
+            transform: rotateX(45deg);
+        }
+
+        .rx-3:hover {
+            transform: rotateX(180deg);
+        }
+
+        .rx-4:hover {
+            transform: rotateX(300deg);
+        }
+
+        /* -----------RotateY------------ */
+        .ry-1:hover {
+            transform: rotateY(20deg);
+        }
+
+        .ry-2:hover {
+            transform: rotateY(45deg);
+        }
+
+        .ry-3:hover {
+            transform: rotateY(180deg);
+        }
+
+        .ry-4:hover {
+            transform: rotateY(300deg);
+        }
+
+        /* -----------RotateZ------------ */
+        .rz-1:hover {
+            transform: rotateZ(15deg);
+        }
+
+        .rz-2:hover {
+            transform: rotateZ(80deg);
+        }
+
+        .rz-3:hover {
+            transform: rotateZ(180deg);
+        }
+
+        .rz-4:hover {
+            transform: rotateZ(-280deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Вращение rotate()</h1>
+    <h2>Наведите на изображение, чтобы оценить эффект трансформации.</h2>
+    <div class="container">
+        <div>
+            <p>rotate(0);</p>
+            <img src="images/consultant.jpg" class="r-1" alt="Собака-консультака">
+        </div>
+        <div>
+            <p>rotate(45deg);</p>
+            <img src="images/consultant.jpg" class="r-2" alt="Собака-консультака">
+        </div>
+        <div>
+            <p>rotate(-90deg);</p>
+            <img src="images/consultant.jpg" class="r-3" alt="Собака-консультака">
+        </div>
+        <div>
+            <p>rotate(180deg);</p>
+            <img src="images/consultant.jpg" class="r-4" alt="Собака-консультака">
+        </div>
+    </div>
+
+    <h2>rotateX()</h2>
+    <div class="container">
+        <div>
+            <p>rotateX(20deg);</p>
+            <img src="images/smile.jpg" class="rx-1" alt="Улыбающаяся собака">
+        </div>
+        <div>
+            <p>rotateX(45deg);</p>
+            <img src="images/smile.jpg" class="rx-2" alt="Улыбающаяся собака">
+        </div>
+        <div>
+            <p>rotateX(180deg);</p>
+            <img src="images/smile.jpg" class="rx-3" alt="Улыбающаяся собака">
+        </div>
+        <div>
+            <p>rotateX(300deg);</p>
+            <img src="images/smile.jpg" class="rx-4" alt="Улыбающаяся собака">
+        </div>
+    </div>
+
+    <h2>rotateY()</h2>
+    <div class="container">
+        <div>
+            <p>rotateY(20deg);</p>
+            <img src="images/paws.jpg" class="ry-1" alt="У меня тоже лапки!">
+        </div>
+        <div>
+            <p>rotateY(45deg);</p>
+            <img src="images/paws.jpg" class="ry-2" alt="У меня тоже лапки!">
+        </div>
+        <div>
+            <p>rotateY(180deg);</p>
+            <img src="images/paws.jpg" class="ry-3" alt="У меня тоже лапки!">
+        </div>
+        <div>
+            <p>rotateY(300deg);</p>
+            <img src="images/paws.jpg" class="ry-4" alt="У меня тоже лапки!">
+        </div>
+    </div>
+
+    <h2>rotateZ()</h2>
+    <div class="container">
+        <div>
+            <p>rotateZ(15deg);</p>
+            <img src="images/hunter.jpg" class="rz-1" alt="Охотничий пес">
+        </div>
+        <div>
+            <p>rotateZ(80deg);</p>
+            <img src="images/hunter.jpg" class="rz-2" alt="Охотничий пес">
+        </div>
+        <div>
+            <p>rotateZ(180deg);</p>
+            <img src="images/hunter.jpg" class="rz-3" alt="Охотничий пес">
+        </div>
+        <div>
+            <p>rotateZ(-280deg);</p>
+            <img src="images/hunter.jpg" class="rz-4" alt="Охотничий пес">
+        </div>
+    </div>
+</body>
+
+</html>

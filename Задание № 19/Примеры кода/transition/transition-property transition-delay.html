@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition и собачки</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* -----------Filter contrast------------ */
+        img {
+            filter: contrast(100%);
+            border: 5px solid transparent;
+            border-radius: 0;
+        }
+
+        img:hover {
+            filter: contrast(50%);
+            border: 5px solid #68037f;
+            border-radius: 20px;
+            transition-duration: 5000ms;
+        }
+
+        .cont-1:hover {
+            transition-property: all;
+        }
+
+        .cont-2:hover {
+            transition-property: filter;
+        }
+
+        .cont-3:hover {
+            transition-property: border;
+        }
+
+        .cont-4:hover {
+            transition-property: border-radius;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Настройки изображения</h1>
+    <h2>transition-property и transition-delay</h2>
+    <h3>Для всех изображений по умолчанию заданы настройки контрастности, границы и их скругления. При наведении мыши
+        значения свойств меняются. Некоторые значения будут изменены с задержкой благодаря свойствам transition-delay и
+        transition-property.</h3>
+    <div class="container">
+        <div>
+            <p>transition-property:all;</p>
+            <img src="images/bread.jpg" class="cont-1" alt="Хлебушек">
+        </div>
+        <div>
+            <p>transition-property:filter;</p>
+            <img src="images/bread.jpg" class="cont-2" alt="Хлебушек">
+        </div>
+        <div>
+            <p>transition-property:border;</p>
+            <img src="images/bread.jpg" class="cont-3" alt="Хлебушек">
+        </div>
+        <div>
+            <p>transition-property:border-radius;</p>
+            <img src="images/bread.jpg" class="cont-4" alt="Хлебушек">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

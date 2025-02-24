@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: scale</title>
+    <link rel="stylesheet" href="style-3d.css">
+    <style>
+        /* -----------ScaleZ------------ */
+        .sz-1:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scaleZ(0.5);
+        }
+
+        .sz-2:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scaleZ(1.5);
+        }
+
+        .sz-3:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scaleZ(2);
+        }
+
+        .sz-4:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scaleZ(-1);
+        }
+
+        /* -----------Scale3d------------ */
+        .s3d-1:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scale3d(1, 0.2, 0.5);
+        }
+
+        .s3d-2:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scale3d(1, 1, 0.5);
+        }
+
+        .s3d-3:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scale3d(1.2, 1.5, 1.7);
+        }
+
+        .s3d-4:hover {
+            transform: rotate3d(1, 1, 0, 45deg) scale3d(0.2, 1.5, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Масштабирование</h1>
+
+    <h2>rotate3d(1, 1, 0, 45deg) + scaleZ()</h2>
+    <div class="container">
+        <div>
+            <p>scaleZ(0.5);</p>
+            <section id="example-element" class="sz-1">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+            </section>
+        </div>
+        <div>
+            <p>scaleZ(1.5);</p>
+            <section id="example-element" class="sz-2">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+
+        </div>
+        <div>
+            <p>scaleZ(2);</p>
+            <section id="example-element" class="sz-3">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+
+        </div>
+        <div>
+            <p>scaleZ(-1);</p>
+            <section id="example-element" class="sz-4">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+
+        </div>
+    </div>
+    <h2>rotate3d(1, 1, 0, 45deg) + scale3d()</h2>
+    <div class="container">
+        <div>
+            <p>scale3d(1, 0.2, 0.5)</p>
+            <section id="example-element" class="s3d-1">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+        </div>
+        <div>
+            <p>scale3d(1, 1, 0.5);</p>
+            <section id="example-element" class="s3d-2">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+        </div>
+        <div>
+            <p>scale3d(1.2, 1.5, 1.7);</p>
+            <section id="example-element" class="s3d-3">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+        </div>
+        <div>
+            <p>scale3d(0.2, 1.5, 1);</p>
+            <section id="example-element" class="s3d-4">
+                <div class="face front">1</div>
+                <div class="face back">2</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+                <div class="face top">5</div>
+                <div class="face bottom">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
