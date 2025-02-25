@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-fill-mode</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .block {
+            border: 5px solid transparent;
+        }
+
+        .container:hover .block {
+            animation-name: color;
+            /*название анимации для @keyframe*/
+            animation-duration: 5s;
+            /*длительность анимации*/
+            animation-delay: 3s;
+            /* добавим задержку, чтобы оценить эффект */
+        }
+
+        .container:hover .block.first {
+            animation-fill-mode: none;
+            /*cтили, описанные в анимации, применяются к элементу только в процессе выполнения*/
+        }
+
+        /* последний и первый ключевой кадр зависит от значения animation-direction и animation-iteration-count */
+        /* добавьте эти настройки и оцените изменения */
+        .container:hover .block.second {
+            animation-fill-mode: forwards;
+            /*Элемент сохранит стили, установленные последним ключевым кадром*/
+        }
+
+        .container:hover .block.third {
+            animation-fill-mode: backwards;
+            /*Анимация сразу применит к элементу стили, определенные в первом ключевом кадре*/
+        }
+
+        .container:hover .block.fourth {
+            animation-fill-mode: both;
+            /*Стили будут применены во все время выполнения анимации (даже при задержке animation-delay) и после ее завершения.*/
+        }
+
+        /* измените количество ключевых кадров, оцените произошедшие изменения */
+        @keyframes color {
+            from {
+                background-color: #630476;
+                border: 5px solid pink;
+            }
+
+            to {
+                background-color: #ccc;
+                border: 5px solid transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>background-color | animation-fill-mode</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <div class="container">
+        <div>
+            <p>none</p>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <p>forwards</p>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <p>backwards</p>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <p>both</p>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

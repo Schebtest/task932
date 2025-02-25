@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container:hover .block{
+            animation-name: border; /*название анимации для @keyframe*/
+            animation-fill-mode:forwards; /*стили анимации сохраняются после ее завершения*/
+        }
+
+        .container:hover .block.first{
+            animation-duration: 0.9s; /*длительность анимации*/
+        }
+
+        .container:hover .block.second {
+            animation-duration: 1.5s; /*длительность анимации*/
+        }
+
+        .container:hover .block.third {
+            animation-duration: 3s; /*длительность анимации*/
+        }
+
+        .container:hover .block.fourth {
+            animation-duration: 7s; /*длительность анимации*/
+        }
+
+        @keyframes border {
+            0% {
+                border-radius: 0;
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+
+        /* измените название анимации в строке 12 на color, оцените произошедшие изменения */
+        @keyframes color {
+            0% {
+                background-color:#630476;
+            }
+
+            100% {
+                background-color:#d687e6;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>border | animation-duration</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <div class="container">
+        <div>
+            <p>animation-duration: 0.9s;</p>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <p>animation-duration: 1.5s;</p>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <p>animation-duration: 3s;</p>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <p>animation-duration: 7s;</p>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

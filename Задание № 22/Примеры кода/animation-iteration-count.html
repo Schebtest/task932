@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-iteration-count</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .block {
+            transform: scale(0.2);
+        }
+
+        .container:hover .block {
+            animation-name: scale;
+            /*название анимации для @keyframe*/
+            animation-fill-mode: forwards;
+            /*стили анимации сохраняются после ее завершения*/
+            animation-duration: 4s;
+            /*длительность анимации*/
+        }
+
+        /* Изменяйте длительность анимации и значение количества циклов, следите за изменениями на странице */
+        .container:hover .block.first {
+            animation-iteration-count: 1;
+        }
+
+        .container:hover .block.second {
+            animation-iteration-count: 2;
+        }
+
+        .container:hover .block.third {
+            animation-iteration-count: 3;
+        }
+
+        .container:hover .block.fourth {
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes scale {
+            from {
+                transform: scale(0.2);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>Transform: scale | animation-iteration-count</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <div class="container">
+        <div>
+            <p> animation-iteration-count: 1;</p>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <p> animation-iteration-count: 2;</p>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <p> animation-iteration-count: 3;</p>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <p> infinite</p>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

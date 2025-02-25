@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .block {
+            transform: scale(0.2);
+        }
+
+        .container:hover .block {
+            /* animation-name: scale;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-fill-mode: forwards; */
+            animation: scale 4s cubic-bezier(0.19, 1, 0.22, 1) 2s 3 alternate forwards;
+        }
+
+
+
+        @keyframes scale {
+            from {
+                transform: scale(0.2);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>Transform: scale | animation</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <h3>Запись 7 свойств одной строкой: animation: scale 4s cubic-bezier(0.19, 1, 0.22, 1) 2s 3 alternate forwards;</h3>
+    <div class="container">
+        <div>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

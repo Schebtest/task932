@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-direction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .block {
+            transform: scale(0.2);
+        }
+
+        .container:hover .block {
+            animation-name: scale;
+            /*название анимации для @keyframe*/
+            animation-fill-mode: forwards;
+            /*стили анимации сохраняются после ее завершения*/
+            animation-duration: 4s;
+            /*длительность анимации*/
+            animation-iteration-count: 3;
+        }
+
+        /* Изменяйте значение количества циклов, следите за изменениями на странице */
+        .container:hover .block.first {
+            animation-direction: normal;
+        }
+
+        .container:hover .block.second {
+            animation-direction: reverse;
+        }
+
+        .container:hover .block.third {
+            animation-direction: alternate;
+        }
+
+        .container:hover .block.fourth {
+            animation-direction: alternate-reverse;
+        }
+
+
+        @keyframes scale {
+            from {
+                transform: scale(0.2);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>Transform: scale | animation-direction</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <h3>Стартовое состояние - трансформация scale(0.2). Конечное состояние - scale(1)</h3>
+    <div class="container">
+        <div>
+            <p>normal</p>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <p>reverse</p>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <p>alternate</p>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <p>alternate-reverse</p>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись нескольких свойств</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container:hover .block {
+            animation-name: scale, border, color;
+            animation-duration: 6s, 3s, 2s;
+            animation-iteration-count: 1, 2, infinite;
+            animation-direction: alternate, reverse, alternate-reverse, normal;
+            animation-fill-mode: forwards, both;
+        }
+
+        @keyframes scale {
+            from {
+                transform: scale(0.2);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes color {
+            from {
+                background-color: #630476;
+            }
+
+            to {
+                background-color: #ccc;
+            }
+        }
+
+        @keyframes border {
+            0% {
+                border-radius: 0;
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <h3>Три свойства применяются к элементам с разными параметрами.</h3>
+    <div class="container">
+        <div>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

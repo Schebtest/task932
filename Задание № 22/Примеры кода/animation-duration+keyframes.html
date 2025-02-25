@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container:hover .block {
+            animation-name: color;
+            /*название анимации для @keyframe*/
+            animation-fill-mode: forwards;
+            /*стили анимации сохраняются после ее завершения*/
+            animation-duration: 7s;
+            /*длительность анимации*/
+        }
+
+        /* замените значения 0 и 100 на ключевые слова from и to */
+        @keyframes border {
+            0% {
+                border-radius: 0;
+            }
+
+            25% {
+                border-radius: 5%;
+            }
+
+            50% {
+                border-radius: 10%;
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+
+        /* измените название анимации в строке 12 на color, оцените произошедшие изменения */
+        /* удалите или измените некоторые ключевые кадры */
+        /* раскомментируйте свойства на точке 40% */
+        @keyframes color {
+            0% {
+                background-color: #630476;
+            }
+
+            10% {
+                background-color: #150476;
+            }
+
+            25% {
+                background-color: #047672;
+            }
+
+            40% {
+                background-color: #04760f;
+                /* border-radius: 50%; */
+                /* transform: scale(1.2); */
+            }
+
+            55% {
+                background-color: #727604;
+            }
+
+            70% {
+                background-color: #760404;
+            }
+
+            100% {
+                background-color: #630476;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>border | @keyframes</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <div class="container">
+        <div>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

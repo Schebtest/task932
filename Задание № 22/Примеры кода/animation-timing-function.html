@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-timing-function</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .container:hover .block{
+            animation-name: color; /*название анимации для @keyframe*/
+            animation-fill-mode:forwards; /*стили анимации сохраняются после ее завершения*/
+            animation-duration: 7s;  /*длительность анимации*/
+        }
+
+        .container:hover .block.first{
+            animation-timing-function: ease-in; /*переход начинается медленно, с увеличением скорости до полного завершения*/
+        }
+
+        .container:hover .block.second {
+            animation-timing-function: ease-out; /*переход начинается быстро, с замедлением при завершении*/
+        }
+
+        .container:hover .block.third {     
+            animation-timing-function: steps(3,start); /*измените количество шагов - оцените произошедшие изменения*/
+        }
+
+        .container:hover .block.fourth {
+            animation-timing-function: steps(7,end); /*измените количество шагов - оцените произошедшие изменения*/
+        }
+
+        /* измените количество ключевых кадров, оцените произошедшие изменения */
+        @keyframes color {
+            0% {
+                background-color:#630476;
+            }
+
+            100% {
+                background-color:#ccc;
+            }
+        }
+
+        @keyframes border {
+            0% {
+                border-radius: 0;
+                border-bottom: 5px solid red;
+            }
+
+            25% {
+                border-radius: 5%;
+                border-bottom: 5px solid red;
+                border-left: 5px solid red;
+            }
+
+            50% {
+                border-radius: 10%;
+                border-bottom: 5px solid red;
+                border-left: 5px solid red;
+                border-top: 5px solid red;
+            }
+
+            100% {
+                border-radius: 50%;
+                border: 5px solid red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>background-color | animation-timing-function</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <div class="container">
+        <div>
+            <p>ease-in</p>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <p>ease-out</p>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <p>steps(3,start)</p>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <p>steps(7,end)</p>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>

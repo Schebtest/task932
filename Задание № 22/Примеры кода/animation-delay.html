@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-delay</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container:hover .block {
+            animation-name: rotate;
+            /*название анимации для @keyframe*/
+            animation-fill-mode: forwards;
+            /*стили анимации сохраняются после ее завершения*/
+            animation-duration: 2s;
+            /*длительность анимации*/
+        }
+
+        /* Изменяйте длительность анимации и значение задержки, следите за изменениями на странице */
+        .container:hover .block.first {
+            animation-delay: 0s;
+        }
+
+        .container:hover .block.second {
+            animation-delay: 1s;
+        }
+
+        .container:hover .block.third {
+            animation-delay: 2s;
+        }
+
+        .container:hover .block.fourth {
+            animation-delay: 3s;
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(45deg);
+            }
+
+            50% {
+                transform: rotate(90deg);
+            }
+
+            75% {
+                transform: rotate(135deg);
+            }
+
+            to {
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации</h1>
+    <h2>Transform: rotate | animation-delay</h2>
+    <h3>Наведите на область с блоками, чтобы запустить анимацию.</h3>
+    <div class="container">
+        <div>
+            <p> animation-delay: 0s;</p>
+            <div class="block first"></div>
+        </div>
+        <div>
+            <p> animation-delay: 1s;</p>
+            <div class="block second"></div>
+        </div>
+        <div>
+            <p> animation-delay: 2s;</p>
+            <div class="block third"></div>
+        </div>
+        <div>
+            <p> animation-delay: 3s;</p>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</body>
+
+</html>
