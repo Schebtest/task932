@@ -1,0 +1,113 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.block {
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.loader {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin-top: 15%;
+}
+
+.item {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+.first {
+	background-color: #fa5667;
+	z-index: 1;
+	animation: item-first_move 2s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+.second {
+	background-color: #7a45e5;
+	animation: item-second_move 2s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+.third {
+	background-color: #1b91f7;
+	z-index: 1;
+	animation: item-third_move 2s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+.fourth {
+	background-color: #fac24c;
+	animation: item-fourth_move 2s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+
+
+@keyframes item-first_move {
+    0%,
+    100% {
+        transform: translate(0, 0); /*старт*/
+    }
+    25% {
+        transform: translate(0, 50px); /*вниз*/
+    }
+    50% {
+        transform: translate(50px, 50px); /*остаемся внизу и двигаемся вправо*/
+    }
+    75% {
+        transform: translate(50px, 0); /*остаемся справа и  возвращаемся наверх*/
+    }
+}
+
+
+@keyframes item-second_move {
+	0%,
+	100% {
+		transform: translate(0, 0); /*старт*/
+	}
+	25% {
+		transform: translate(-50px, 0); /*налево*/
+	}
+	50% {
+		transform: translate(-50px, 50px); /*остаемся слева и двигаемся вниз*/
+	}
+	75% {
+		transform: translate(0, 50px); /*остаемся внизу и двигаемся направо*/
+	}
+}
+
+@keyframes item-third_move {
+	0%,
+	100% {
+		transform: translate(0, 0); /*старт*/
+	}
+	25% {
+		transform: translate(0, -50px); /*наверх*/
+	}
+	50% {
+		transform: translate(-50px, -50px); /*остаемся наеврху и двигаемся налево*/
+	}
+	75% {
+		transform: translate(-50px, 0); /*остаемся слева и возвращаемся вниз*/
+	}
+}
+
+@keyframes item-fourth_move {
+	0%,
+	100% {
+		transform: translate(0, 0); /*старт*/
+	} 
+	25% {
+		transform: translate(50px, 0); /*направо*/
+	}
+	50% {
+		transform: translate(50px, -50px);/*остаемся справа, сдвигаемся наверх*/
+	}
+	75% {
+		transform: translate(0, -50px);/*остаемся сверху, сдвигаемся налево*/
+	}
+}

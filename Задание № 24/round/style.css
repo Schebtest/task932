@@ -1,0 +1,84 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.block {
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.loader {
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+.loader.first {
+	border: 16px solid #f3f3f3; /* цвет границы */
+	border-top: 16px solid #3498db; /* цвет "бегунка" */
+	/* размеры загрузчика */
+	width: 120px;
+	height: 120px;
+	/* параметры анимации */
+	/* название - spin */
+	/* длительность - 2 секунды */
+	/* скорость анимации - равномерная на всем времени */
+	/* повторение анимации - без ограничений */
+	animation: spin 2s linear infinite;
+}
+
+.loader.thin {
+	border: 8px solid #7462e7; /* цвет границы */
+	border-top: 8px solid #160468; /* цвет "бегунка" */
+	/* размеры загрузчика */
+	width: 60px;
+	height: 60px;
+	/* параметры анимации */
+	animation: spin 2s linear infinite;
+}
+
+.loader.fat {
+	border: 24px solid #26be00; /* цвет границы */
+	border-top: 24px solid #eeff00; /* цвет "бегунка" */
+	/* размеры загрузчика */
+	width: 60px;
+	height: 60px;
+	/* параметры анимации */
+	animation: spin 2s linear infinite;
+}
+
+.loader.double {
+	border: 24px solid #900000; /* цвет границы */
+	border-top: 24px solid #e0e0e0; /* цвет "бегунка" */
+	border-bottom: 24px solid #e0e0e0; /* цвет "бегунка" */
+	/* размеры загрузчика */
+	width: 60px;
+	height: 60px;
+	/* параметры анимации */
+	animation: spin 2s linear infinite;
+}
+.loader.strange {
+	border: 24px solid #e0e0e0; /* цвет границы */
+	border-top: 12px solid #810555; /* цвет "бегунка" */
+	border-bottom: 12px solid #fff700; /* цвет "бегунка" */
+	/* размеры загрузчика */
+	width: 60px;
+	height: 60px;
+	/* параметры анимации */
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
