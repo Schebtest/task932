@@ -1,0 +1,50 @@
+/*
+Статичная разметка. 
+Размеры блоков заданы в px.
+Размер текста в pt.
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 12pt, Arial, Helvetica, sans-serif;
+}
+
+.container,
+footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.container {
+	background-color: #e2e2e2;
+}
+
+header {
+	background-color: #fff0e6;
+	padding: 10px;
+}
+
+section {
+	background-color: #d8edf5;
+	width: 650px;
+	float: left;
+	padding: 10px;
+}
+
+aside {
+	background-color: #efe5cc;
+	width: 300px;
+	float: right;
+	padding: 10px;
+}
+
+footer {
+	background-color: #afd0a6;
+	padding: 10px;
+	clear: both;
+}

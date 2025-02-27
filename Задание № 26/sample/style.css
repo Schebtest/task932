@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 0.75em, Arial, Helvetica, sans-serif;
+}
+
+.container,
+footer {
+	width: 70%;
+	margin: 0 auto;
+}
+.container {
+	background: #e2e2e2;
+}
+
+header {
+	background-color: #fff0e6;
+	padding: 1%;
+}
+
+section {
+	background-color: #d8edf5;
+	width: 67.708333333%;
+	float: left;
+	padding: 1%;
+}
+
+aside {
+	background-color: #efe5cc;
+	width: 31.25%;
+	float: right;
+	padding: 1%;
+}
+
+footer {
+	background-color: #afd0a6;
+	padding: 1%;
+	clear: both;
+}
