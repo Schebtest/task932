@@ -1,0 +1,359 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font: 14pt Arial, sans-serif;
+	height: 100%;
+	color: #036;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+header {
+	height: 550px;
+	overflow: hidden;
+	background-image: url("../media/image/fonstola.ru_198639.jpg");
+}
+
+header > div {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+header > div > h1,
+header > div > h2,
+header > div > h3 {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+header > div > h1 {
+	font-size: 36pt;
+}
+
+header > div > h2 {
+	font-size: 28pt;
+
+}
+
+header > div > h3 {
+	font-size: 32pt;
+	font-style: italic;
+	
+	margin-top: 3%;
+}
+
+header > div > hr {
+	border: none;
+	color: #fff;
+	background-color: #fff;
+	height: 2px;
+	margin-top: 5%;
+}
+
+nav {
+	background-color: #069a55;
+	color: #c0c0c0;
+	text-align: center;
+	font-style: italic;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+nav a {
+	text-decoration: none;
+	color: #c0c0c0;
+	margin: 0.5%;
+}
+
+nav a:hover {
+	color: #fff;
+	
+}
+
+.content {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	overflow: hidden;
+}
+.content > p {
+	padding: 1%;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	font-style: italic;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+footer {
+	background-color: #069a55;
+}
+
+footer > div {
+	margin: 0 auto 0;
+	padding: 1%;
+	width: 80%;
+}
+
+footer > div > p {
+	font-size: 12pt;
+	font-style: italic;
+	color: #c0c0c0;
+	text-align: center;
+}
+
+.list1 {
+	list-style: "\2714";
+}
+
+.list1 li {
+	padding-left: 1%;
+	position: relative;
+	padding: 1%;
+	margin-top: 1%;
+	margin-left: 5%;
+}
+
+.list2 > li {
+	position: relative;
+	border-left: 4px solid #036;
+	padding: 1%;
+	margin-left: 5%;
+}
+
+.list3 > li {
+	margin-left: 10%;
+}
+
+.fill {
+	background-color: rgba(0, 51, 102, 0.1);
+	box-shadow: 0 0 10px rgba(0, 51, 102, 0.7);
+}
+
+.select {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Летопись */
+
+table.date {
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid #dfdfdf;
+	border-radius: 6px;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+table.date thead tr {
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #666;
+}
+
+table.date tr td {
+	border-right: 1px solid #dfdfdf;
+}
+
+table.date tr td:last-child {
+	border-right: 0px;
+}
+
+table.date tbody tr:nth-child(1n) {
+	background: #f6f6f6;
+}
+
+table.date tbody tr:nth-child(2n) {
+	background: #e6e6e6;
+}
+
+/* История */
+
+.page div.sidebar {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	width: 25%;
+	overflow: hidden;
+}
+.page div.sidebar p {
+	padding-bottom: 10%;
+}
+
+.page div.sidebar a {
+	color: #003366;
+	text-decoration: none;
+}
+
+.page div.sidebar a:hover {
+	text-decoration: underline;
+}
+
+.page div.sidebar img {
+	width: 100%;
+	border-radius: 5px;
+	padding: 1px 0 1px 0;
+	float: left;
+}
+
+.page div.frame p.select::first-letter {
+	font-size: 24pt;
+	font-style: italic;
+	margin-right: 4px;
+	font-weight: bold;
+	text-shadow: -2px -2px 2px #036, 2px 2px 2px #fff;
+}
+
+.page div.frame p.select::first-line {
+	color: #666;
+	font-weight: bold;
+}
+
+.frame iframe {
+	border: none;
+	width: 100%;
+}
+
+.page div.frame {
+	width: 70%;
+	float: right;
+}
+
+/* Обратная связь */
+
+form {
+	width: 80%;
+	background: #069a55;
+	margin: 0 auto;
+	padding: 2%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+
+form * {
+	margin: 8px;
+}
+
+form p {
+	padding-bottom: 15px;
+}
+
+form p.center {
+	text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	background-color: #069a55;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 16px 32px;
+	cursor: pointer;
+	border-radius: 6px;
+	min-width: 30%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background-color: #fff;
+	border: 1px solid #666;
+	color: #666;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 60%;
+	padding: 1%;
+}
+
+textarea {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/* Новости */
+
+.news {
+	text-align: justify;
+	background-color: rgba(0, 51, 102, 0.1);
+	padding: 2%;
+	margin-bottom: 2%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.news > h3 {
+	text-align: left;
+	padding-bottom: 1%;
+}
+
+.news > h4 {
+	text-align: left;
+	padding-top: 1%;
+}
+
+.news a {
+	color: #036;
+	cursor: pointer;
+}
+
+.news a:hover {
+	color: #333;
+}
+
+hr {
+	border: none;
+	color: #fff;
+	background-color: #fff;
+	height: 1px;
+}
+
+/* Люди */
+.people {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	width: 45%;
+	display: flex;
+
+	align-items: center;
+
+	margin-bottom: 2%;
+	box-shadow: 4px 4px 56px -20px rgba(107, 110, 112, 0.2);
+}
+
+.card-text {
+	padding: 2%;
+}
+
+/* Адаптивность */
+

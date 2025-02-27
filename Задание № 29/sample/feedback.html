@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Сайт города Омска</title>
+	<link rel="stylesheet" href="style/style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<h1>Сайт города Омска</h1>
+
+			<h3>Омск – город будущего!</h3>
+		</div>
+	</header>
+	<div class="wrapper">
+		<nav>
+			<a href="index.html">Главная страница</a>
+			<a href="news.html">Новости</a>
+			<a href="city-today.html">Город сегодня</a>
+			<a href="history.html">Из истории</a>
+			<a href="chronicle.html">Летопись</a>
+			<a href="people.html">Люди</a>
+			<a href="feedback.html">Обратная связь</a>
+		</nav>
+
+		<div class="content">
+				<h1>Обратная связь</h1>
+
+				<form action="answer.html">
+					<h2>Представьтесь</h2>
+								 
+					<input type="text" required pattern="[а-яА-ЯёЁ\-\s]{2,15}" placeholder="ВВЕДИТЕ ВАШЕ ИМЯ (кириллица, пробел; от 2 до 15 символов)"> 
+				 
+					<input type="text" required pattern="[а-яА-ЯёЁ\-\s]{2,15}" placeholder="ВВЕДИТЕ ВАШУ ФАМИЛИЮ (кириллица, пробел; от 2 до 15 символов)">
+				 
+					<input type="email" required name="email" placeholder="ВВЕДИТЕ EMAIL">
+				 
+					<hr>
+				 
+								
+					<h2>Расскажите о себе</h2>
+					<p>Укажите ваш пол 
+						<input type="radio" name="sex" value="m" >мужской
+						<input type="radio" name="sex" value="f" checked>женский
+						<input type="radio" name="sex" value="h">другой
+					</p>
+					<p>Выберите свой возраст 
+						<select name="selection"> 
+							<option value="option1"> до 18-ти
+							<option value="option2" selected> 19-30
+							<option value="option3"> 31-45
+							<option value="option4"> 46 и старше
+						</select>
+					</p>
+
+					<hr>
+								
+					<h2>Оставьте свое мнение</h2>                   
+					<p>Выберите наиболее интересные для вас страницы:</p>
+					<p>
+						<input type="checkbox" name="index" value="index"> Главная 
+						<input type="checkbox" name="history" value="history">Из истории
+						<input type="checkbox" name="chronicle" value="chronicle">Летопись
+						<input type="checkbox" name="gallery" value="gallery">Галерея
+					</p>
+					<p>Введите сообщение:</p>
+					<p><textarea required name="message" rows="10" cols="50"></textarea></p>
+					<p class="center">
+							<input type="reset" value="Очистить поля формы"> 
+							<input type="submit" value="Отправить">
+					</p>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<p>Материал взят из официальных источников:<br>ru.wikipedia.org</p>
+			</div>
+		</footer>
+	</body>
+</html>
