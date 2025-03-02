@@ -1,0 +1,39 @@
+.container {
+	grid-template: 1fr 1fr  / 1fr  1fr ;
+	padding:1%;
+	border: 1px solid #333333;
+	display: grid;
+	gap:10px;
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+}
+h1,
+h2 {
+	display: block;
+	width: 100%;
+}
+
+.base {
+	font-size: 1.5em;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #333333;
+	border-radius: 5%;
+	display:grid;
+	place-items: center;
+
+}
+
+div:nth-child(1 of .base){
+	background-color: #f9e9e9 ;
+}
+div:nth-child(2 of .base){
+	background-color: #f2f7d9 ;
+}
+div:nth-child(3  of .base){
+	background-color: #c6f2ca ;
+}
+div:nth-child(4 of .base){
+	background-color: #e1f8ff ;
+}

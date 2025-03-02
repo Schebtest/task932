@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>grid-template-areas</title>
+    <style>
+      .gta-1 {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: [header-top] 200px [header-bottom main-top] 1fr [main-bottom];
+        grid-template-areas:
+                            "banner    banner"  
+                            "container menu";
+      }
+
+      .a {
+        grid-column-start: banner-start; /* то же, что 1 */
+        grid-column-end: banner-end; /* то же, что 3 */
+        grid-row-start: banner-start; /* то же, что 1 */
+        grid-row-end: banner-end; /* то же, что 2 */
+      }
+
+      .b {
+        grid-row-start: header-bottom; /* то же, что 2 */
+        grid-row-end: main-bottom; /* то же, что 3 */
+        /* колонка не задана, поэтому берется первая свободная */
+      }
+
+      .c {
+        grid-row-start: header-bottom;
+        grid-row-end: main-bottom;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Задаем расположение блоков через grid-template-areas</h1>
+    <h2>Три области занимают разное количество строк и столбцов</h2>
+    <div class="container gta-1">
+      <div class="base a">Блок banner</div>
+      <div class="base b">Блок container</div>
+      <div class="base c">Блок menu</div>
+    </div>
+  </body>
+</html>

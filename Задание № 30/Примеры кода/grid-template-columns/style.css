@@ -1,0 +1,19 @@
+.container {
+	display: grid;
+	justify-content: center;
+	gap:10px;
+	height:300px;
+}
+h1,
+h2 {
+	display: block;
+	width: 100%;
+}
+
+.base {
+	font-size: 1.5em;
+	border: 1px solid #333333;
+	display:grid;
+	place-items: center;
+
+}

@@ -1,0 +1,21 @@
+.container {
+	display: grid;
+	gap:10px;
+	width:1000px;
+}
+h1,
+h2 {
+	display: block;
+	width: 100%;
+}
+
+.base {
+	font-size: 1.5em;
+	border: 1px solid #333333;
+	display:grid;
+	place-items: center;
+}
+
+p{
+margin: 0;
+}

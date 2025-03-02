@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>grid-xxx-start | grid-xxx-end</title>
+    <style>
+      .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+      }
+
+      .base-1 {
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 5;
+      }
+
+      .base-2 {
+        grid-column: span 5;
+        grid-row: span 4;
+      }
+
+      .base-3 {
+        grid-column: 1/13;
+        grid-row: 5/7;
+      }
+      .base-4 {
+        grid-column: 1/6;
+        grid-row: 7/11;
+      }
+      .base-5 {
+        grid-column: 6/13;
+        grid-row: span 2;
+      }
+      .base-6 {
+        grid-column: 1/6;
+        grid-row: span 2;
+      }
+      .base-7 {
+        grid-column-start: 6;
+        grid-column-end: 13;
+        grid-row-start: 9;
+        grid-row-end: 13;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      Настраиваем размеры областей с помощью указания границ колонок и строк
+    </h1>
+    <div class="container row">
+      <div class="base base-1">
+        <p>grid-column-start: 1;</p>
+        <p>grid-column-end: 8;</p>
+        <p>grid-row-start: 1;</p>
+        <p>grid-row-end: 5;</p>
+      </div>
+      <div class="base base-2">
+        <p>grid-column: span 5;</p>
+        <p>grid-row: span 4;</p>
+      </div>
+      <div class="base base-3">
+        <p>grid-column:1/13;</p>
+        <p>grid-row:5/7;</p>
+      </div>
+      <div class="base base-4">
+        <p>grid-column:1/6;</p>
+        <p>grid-row:7/11;</p>
+      </div>
+      <div class="base base-5">
+        <p>grid-column:6/13;</p>
+        <p>grid-row:span 2;</p>
+      </div>
+      <div class="base base-6">
+        <p>grid-column:1/6;</p>
+        <p>grid-row:span 2;</p>
+      </div>
+      <div class="base base-7">
+        <p>grid-column-start:6;</p>
+        <p>grid-column-end: 13;</p>
+        <p>grid-row-start:9;</p>
+        <p>grid-row-end: 13;</p>
+      </div>
+    </div>
+  </body>
+</html>

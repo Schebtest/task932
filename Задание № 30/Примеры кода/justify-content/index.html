@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>justify-content</title>
+    <style>
+        .start{
+          justify-content:start;
+        }
+        .end{
+          justify-content:end;
+        }
+        .center{
+          justify-content:center;
+        }
+        .stretch {
+          justify-content:stretch;
+          .base{width:auto;}
+        }
+        .sb {
+          justify-content:space-between;
+        }
+        .se {
+          justify-content:space-evenly;
+        }
+        .sa {
+          justify-content:space-around;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Настраиваем выравнивание с помощью justify-content</h1>
+    <h2>justify-content:start;</h2>
+    <div class="container start">
+      <div class="base">1</div>
+      <div class="base">2</div>
+      <div class="base">3</div>
+      <div class="base">4</div>
+      <div class="base">5</div>
+      <div class="base">6</div>
+    </div>
+    <h2>justify-content:end;</h2>
+      <div class="container end">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+        <div class="base">5</div>
+        <div class="base">6</div>
+      </div>
+    <h2>justify-content:center;</h2>
+      <div class="container center">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+        <div class="base">5</div>
+        <div class="base">6</div>
+      </div>
+      <h2>justify-content:stretch;</h2>
+      <div class="container stretch">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+        <div class="base">5</div>
+        <div class="base">6</div>
+      </div>
+      <h2>justify-content:space-between;</h2>
+      <div class="container sb">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+        <div class="base">5</div>
+        <div class="base">6</div>
+      </div>
+      <h2>justify-content:space-evenly;</h2>
+      <div class="container se">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+        <div class="base">5</div>
+        <div class="base">6</div>
+      </div>
+      <h2>justify-content:space-around;</h2>
+      <div class="container sa">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+        <div class="base">5</div>
+        <div class="base">6</div>
+      </div>
+  </body>
+</html>

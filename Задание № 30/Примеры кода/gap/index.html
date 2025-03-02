@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GAP</title>
+    <style>
+        .cg{ column-gap: 20px; }
+        .rg{ row-gap: 20px; }
+        .g{ gap: 10px 20px; }
+        .gcalc{ gap:calc(5% + 5px); }
+    </style>
+  </head>
+
+  <body>
+    <h1>Настраиваем расстояние между блоками с помощью gap</h1>
+    <h2>column-gap:20px;</h2>
+    <div class="container cg">
+      <div class="base">1</div>
+      <div class="base">2</div>
+      <div class="base">3</div>
+      <div class="base">4</div>
+    </div>
+    <h2>row-gap:20px;</h2>
+      <div class="container rg">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+    <h2>gap:10px 20px;</h2>
+      <div class="container g">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+      <h2>gap: calc(5%+5px);</h2>
+      <div class="container gcalc">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+  </body>
+</html>

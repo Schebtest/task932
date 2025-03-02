@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>align-items</title>
+    <style>
+        .start{
+          align-items:start;
+        }
+        .end{
+          align-items:end;
+        }
+        .center{
+          align-items:center;
+        }
+        .stretch{
+          align-items:stretch;
+          .base{
+            height:auto;
+          }
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Настраиваем выравнивание с помощью align-items</h1>
+    <h2>align-items:start;</h2>
+    <div class="container start">
+      <div class="base">1</div>
+      <div class="base">2</div>
+      <div class="base">3</div>
+      <div class="base">4</div>
+    </div>
+    <h2>align-items:end;</h2>
+      <div class="container end">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+    <h2>align-items:center;</h2>
+      <div class="container center">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+      <h2>align-items:stretch; <br> .base {height:auto;}</h2>
+      <div class="container stretch">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+  </body>
+</html>

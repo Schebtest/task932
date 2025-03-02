@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>justify-items</title>
+    <style>
+        .start{
+          justify-items:start;
+        }
+        .end{
+          justify-items:end;
+        }
+        .center{
+          justify-items:center;
+        }
+        .stretch{
+          justify-items:stretch;
+          .base{
+            width:auto;
+          }
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Настраиваем выравнивание с помощью justify-items</h1>
+    <h2>justify-items:start;</h2>
+    <div class="container start">
+      <div class="base">1</div>
+      <div class="base">2</div>
+      <div class="base">3</div>
+      <div class="base">4</div>
+    </div>
+    <h2>justify-items:end;</h2>
+      <div class="container end">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+    <h2>justify-items:center;</h2>
+      <div class="container center">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+      <h2>justify-items:stretch; <br> .base {width:auto;}</h2>
+      <div class="container stretch">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+  </body>
+</html>

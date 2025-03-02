@@ -1,0 +1,21 @@
+.container {
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+	gap:10px;
+	width:400px;
+}
+h1,
+h2 {
+	display: block;
+	width: 100%;
+}
+
+.base {
+	font-size: 1.5em;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #333333;
+	border-radius: 5%;
+	display:grid;
+	place-items: center;
+}

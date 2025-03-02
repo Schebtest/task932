@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>grid-template-areas</title>
+    <style>
+      .a{grid-area: a;}
+      .b{grid-area: b;}
+      .c{grid-area: c;}
+      .d{grid-area: d;}
+
+      .gta-1{
+        grid-template-areas: "a a a"
+                             "b c c"
+                             "b c c"
+                             "d d d";
+        grid-template-columns: repeat(3, 200px);
+      }
+
+      .gta-2{
+        grid-template-areas:     "a a a a   b b b b"
+                                 "a a a a   d d d d"
+                                 "c c c c   d d d d";
+        grid-template-columns:repeat(8, 100px);
+      }
+
+      .gta-3{
+        grid-template-areas: ". b b b b" 
+                             "c c . d d"
+                             "a a a a  ." ;
+        grid-template-columns:repeat(5, 200px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Задаем расположение блоков через grid-template-areas</h1>
+    <h2>Четыре области занимают разное количество строк и столбцов</h2>
+    <div class="container gta-1">
+      <div class="base a">1</div>
+      <div class="base b">2</div>
+      <div class="base c">3</div>
+      <div class="base d">4</div>
+    </div>
+
+    <h2>Ещё один вариант расположения</h2>
+    <div>
+      <div class="container gta-2">
+        <div class="base a">1</div>
+        <div class="base b">2</div>
+        <div class="base c">3</div>
+        <div class="base d">4</div>
+      </div>
+    </div>
+
+    <h2>Третий вариант, когда в строках НЕ все пространство занято блоками</h2>
+    <div>
+      <div class="container gta-3">
+        <div class="base a">1</div>
+        <div class="base b">2</div>
+        <div class="base c">3</div>
+        <div class="base d">4</div>
+      </div>
+    </div>
+
+  </body>
+</html>

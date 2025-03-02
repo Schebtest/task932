@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>grid-template-columns</title>
+    <style>
+      .gtc-1{
+        grid-template-columns:120px 20% 50px auto;
+      }
+
+      .gtc-2{
+        grid-template-columns:repeat(4, 200px);
+      }
+
+      .gtc-3{
+        grid-template-columns:50px 50px 1fr 50px;
+      }
+
+      .gtc-4{
+        grid-template-columns:2fr 1fr 3fr 1fr;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Настраиваем количество и размеры строк с помощью свойства grid-template-columns</h1>
+    <h2>grid-template-columns:120px 20% 50px auto</h2>
+    <div class="container gtc-1">
+      <div class="base">1</div>
+      <div class="base">2</div>
+      <div class="base">3</div>
+      <div class="base">4</div>
+    </div>
+
+    <h1>Заменяем повторяющиеся размеры функцией repeat()</h1>
+    <h2>grid-template-columns: repeat(4, 100px)</h2>
+    <div>
+      <div class="container gtc-2">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+    </div>
+    <h2>grid-template-columns:50px 50px 1fr 50px</h2>
+    <div>
+      <div class="container gtc-3">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+    </div>
+    <h2>grid-template-columns:2fr 1fr 3fr 1fr</h2>
+    <div>
+      <div class="container gtc-4">
+        <div class="base">1</div>
+        <div class="base">2</div>
+        <div class="base">3</div>
+        <div class="base">4</div>
+      </div>
+    </div>
+  </body>
+</html>
