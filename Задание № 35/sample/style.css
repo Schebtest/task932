@@ -1,0 +1,148 @@
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+h1,
+h2 {
+	display: block;
+	width: 100%;
+}
+.step {
+	display: flex;
+	flex-wrap: wrap;
+}
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	width: 150px;
+	height: 150px;
+	border-radius: 5%;
+	margin: 10px;
+	color: #ffffff;
+}
+
+.color {
+	background-color: hsl(209, 87%, 24%);
+}
+
+/* --------------насыщенность-------------- */
+.sat-0 {
+	background-color: hsl(209, 0%, 24%);
+}
+.sat-10 {
+	background-color: hsl(209, 10%, 24%);
+}
+.sat-20 {
+	background-color: hsl(209, 20%, 24%);
+}
+.sat-30 {
+	background-color: hsl(209, 30%, 24%);
+}
+.sat-40 {
+	background-color: hsl(209, 40%, 24%);
+}
+.sat-50 {
+	background-color: hsl(209, 50%, 24%);
+}
+.sat-60 {
+	background-color: hsl(209, 60%, 24%);
+}
+.sat-70 {
+	background-color: hsl(209, 70%, 24%);
+}
+.sat-80 {
+	background-color: hsl(209, 80%, 24%);
+}
+.sat-90 {
+	background-color: hsl(209, 90%, 24%);
+}
+.sat-100 {
+	background-color: hsl(209, 100%, 24%);
+}
+
+/* --------------светлота-------------- */
+.light-0 {
+	background-color: hsl(209, 87%, 0%);
+}
+.light-10 {
+	background-color: hsl(209, 87%, 10%);
+}
+.light-20 {
+	background-color: hsl(209, 87%, 20%);
+}
+.light-30 {
+	background-color: hsl(209, 87%, 30%);
+}
+.light-40 {
+	background-color: hsl(209, 87%, 40%);
+}
+.light-50 {
+	background-color: hsl(209, 87%, 50%);
+}
+.light-60 {
+	background-color: hsl(209, 87%, 60%);
+}
+.light-70 {
+	background-color: hsl(209, 87%, 70%);
+}
+.light-80 {
+	background-color: hsl(209, 87%, 80%);
+}
+.light-90 {
+	background-color: hsl(209, 87%, 90%);
+}
+.light-100 {
+	background-color: hsl(209, 87%, 100%);
+}
+
+/* --------------цветовой тон-------------- */
+
+.hue-159 {
+	background-color: hsl(159, 87%, 24%);
+}
+.hue-209 {
+	background-color: hsl(209, 87%, 24%);
+}
+.hue-259 {
+	background-color: hsl(259, 87%, 24%);
+}
+.hue-309 {
+	background-color: hsl(309, 87%, 24%);
+}
+
+/* --------------кастомный белый-------------- */
+
+.white {
+	background-color: #ffffff;
+	color: hsl(209, 87%, 24%);
+	border: 1px solid hsl(209, 87%, 24%);
+}
+.custom-white {
+	background-color: hsl(209, 87%, 98%);
+	color: hsl(209, 87%, 24%);
+	border: 1px solid hsl(209, 87%, 24%);
+}
+
+/* --------------кнопки-------------- */
+
+.btn-primary {
+	background-color: hsl(209, 87%, 24%);
+	color: hsl(209, 87%, 98%);
+}
+
+.btn-secondary {
+	background-color: hsl(209, 87%, 30%);
+	color: hsl(209, 87%, 98%);
+}
+
+.btn-border {
+	border: 3px solid hsl(209, 87%, 24%);
+	color: hsl(209, 87%, 24%);
+}
+
+.btn-shadow {
+	box-shadow: 0 0 10px hsl(209, 87%, 24%);
+	color: hsl(209, 87%, 24%);
+}

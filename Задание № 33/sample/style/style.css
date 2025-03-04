@@ -1,0 +1,98 @@
+/* Подключаем три версии шрифта Golos, разной толщины */
+@font-face {
+	font-family: Golos;
+	src: url("../fonts/Golos-Text_Regular.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Golos;
+	src: url("../fonts/Golos-Text_DemiBold.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Golos;
+	src: url("../fonts/Golos-Text_Bold.ttf");
+	font-weight: 700;
+}
+
+* {
+	font-family: Golos;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.bold {
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+
+.text-title {
+	font-size: 48px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.text-title-sm {
+	font-size: 32px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.bg-black {
+	background: #000;
+}
+.bg-dark {
+	background: #212529;
+}
+
+
+/* /// Преимущества LiveTV /// */
+.advantages {
+	padding: 7% 0;
+	display: flex;
+}
+
+.advantages-img {
+	width: 50%;
+}
+.advantages-text {
+	width: 50%;
+}
+
+.advantages-statistics {
+	display: flex;
+}
+
+.advantages-statistics-col {
+	width: 50%;
+}
+
+.text-gradient {
+    font-weight: 700;
+    font-size: 40px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #0052d4, #fff);
+}
+
+
